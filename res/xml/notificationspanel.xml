@@ -60,6 +60,18 @@
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
 
-    </PreferenceCategory>   
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="quick_settings_general_category"
+        android:title="@string/general_category">
+
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
