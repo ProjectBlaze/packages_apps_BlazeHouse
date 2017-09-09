@@ -19,6 +19,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_to_sleep_lockscreen_title"
+            android:summary="@string/double_tap_to_sleep_lockscreen_summary"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
 
