@@ -19,5 +19,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
     
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_to_sleep_statusbar_title"
+            android:summary="@string/double_tap_to_sleep_statusbar_summary"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
