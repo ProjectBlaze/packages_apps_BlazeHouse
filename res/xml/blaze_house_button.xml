@@ -15,16 +15,23 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory android:key="hardware_keys"
+	android:title="@string/hardware_keys_category">
+
+	<SwitchPreference android:key="hardware_keys_disable"
+		android:title="@string/hardware_keys_disable_title" />
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="button_backlight_options_category"
         android:title="@string/button_backlight_options_category" >
 
-        <com.colt.enigma.preference.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="button_backlight_enable"
             android:title="@string/button_backlight_enable_title"
             android:defaultValue="true"/>
 
-        <com.colt.enigma.preference.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="custom_button_use_screen_brightness"
             android:title="@string/button_link_brightness"
             android:summary="@string/button_link_brightness_summary"
@@ -32,7 +39,7 @@
             android:dependency="button_backlight_enable"
             android:disableDependentsState="true" />
 
-        <com.colt.enigma.preference.CustomSeekBarPreference
+        <com.blaze.house.preferences.CustomSeekBarPreference
             android:key="button_manual_brightness_new"
             android:title="@string/button_manual_brightness"
             android:max="255"
@@ -40,7 +47,7 @@
             android:persistent="false"
             android:dependency="custom_button_use_screen_brightness" />
 
-        <com.colt.enigma.preference.CustomSeekBarPreference
+        <com.blaze.house.preferences.CustomSeekBarPreference
             android:key="button_timeout"
             android:title="@string/button_timeout_title"
             android:max="30"
@@ -48,7 +55,7 @@
             android:persistent="false"
             android:dependency="button_backlight_enable" />
 
-        <com.colt.enigma.preference.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="button_backlight_on_touch_only"
             android:title="@string/button_backlight_on_touch_only_title"
             android:summary="@string/button_backlight_on_touch_only_summary"
@@ -61,23 +68,23 @@
         android:key="back_key"
         android:title="@string/hardware_keys_back_key_title" >
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_back_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_back_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
             android:title="@string/hardware_keys_long_press_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_back_double_tap"
             android:summary="@string/hardware_keys_double_tap_summary"
             android:title="@string/hardware_keys_double_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
     </PreferenceCategory>
 
@@ -85,23 +92,23 @@
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_home_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-	<com.blaze.house.preference.ActionPreference
+	<com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_home_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
             android:title="@string/hardware_keys_long_press_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_home_double_tap"
             android:summary="@string/hardware_keys_double_tap_summary"
             android:title="@string/hardware_keys_double_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
     </PreferenceCategory>
 
@@ -113,19 +120,19 @@
             android:key="hwkeys_button_overview_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_overview_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
             android:title="@string/hardware_keys_long_press_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_overview_double_tap"
             android:summary="@string/hardware_keys_double_tap_summary"
             android:title="@string/hardware_keys_double_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
     </PreferenceCategory>
 
@@ -133,23 +140,23 @@
         android:key="menu_key"
         android:title="@string/hardware_keys_menu_key_title" >        
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_menu_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_menu_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
             android:title="@string/hardware_keys_long_press_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_menu_double_tap"
             android:summary="@string/hardware_keys_double_tap_summary"
             android:title="@string/hardware_keys_double_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
     </PreferenceCategory>
 
@@ -157,23 +164,23 @@
         android:key="assist_key"
         android:title="@string/hardware_keys_assist_key_title" >
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_assist_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"
             android:title="@string/hardware_keys_single_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_assist_long_press"
             android:summary="@string/hardware_keys_long_press_summary"
             android:title="@string/hardware_keys_long_press_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
-        <com.blaze.house.preference.ActionPreference
+        <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_assist_double_tap"
             android:summary="@string/hardware_keys_double_tap_summary"
             android:title="@string/hardware_keys_double_tap_title" >
-        </com.blaze.house.preference.ActionPreference>
+        </com.blaze.house.preferences.ActionPreference>
 
     </PreferenceCategory>
 
