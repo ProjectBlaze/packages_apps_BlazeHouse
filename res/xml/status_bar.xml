@@ -80,5 +80,17 @@
         android:defaultValue="false"/>
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="notifications_general_category"
+        android:title="@string/general_category">
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="status_bar_notif_count"
+            android:title="@string/status_bar_notif_count_title"
+            android:summary="@string/status_bar_notif_count_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

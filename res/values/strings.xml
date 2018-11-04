@@ -219,4 +219,11 @@
     <string name="volbtn_cursor_control_off">Disabled</string>
     <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+    <!-- Notifications general category -->
+    <string name="notifications_general_category_title">General</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 </resources>
