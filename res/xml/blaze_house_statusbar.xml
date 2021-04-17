@@ -19,6 +19,20 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
     
     <PreferenceCategory
+        android:key="icons_category"
+        android:title="@string/statusbar_icons">
+
+	    <Preference
+        android:key="icon_manager"
+        android:title="@string/statusbar_tuner_title"
+        android:summary="@string/statusbar_items_summary"
+        android:order="-230">
+            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+        </Preference>
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
         android:title="@string/network_category">
         
         <com.blaze.house.preferences.SystemSettingSwitchPreference

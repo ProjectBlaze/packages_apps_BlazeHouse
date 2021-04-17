@@ -81,4 +81,9 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    
+    <!-- Statusbar tuner -->
+    <string name="statusbar_icons">Icons</string>
+    <string name="statusbar_tuner_title">Statusbar tuner</string>
+    <string name="statusbar_items_summary">Tune Statusbar items</string>
 </resources>
