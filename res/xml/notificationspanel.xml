@@ -30,6 +30,25 @@
             android:defaultValue="true" />
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="reticker"
+        android:title="@string/reticker_category" >
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="reticker_status"
+            android:title="@string/reticker_title"
+            android:summary="@string/reticker_summary"
+            android:defaultValue="false" />
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:dependency="reticker_status"
+            android:key="reticker_colored"
+            android:title="@string/reticker_colored_title"
+            android:summary="@string/reticker_colored_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="qs_category"
