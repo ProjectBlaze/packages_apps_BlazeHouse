@@ -19,6 +19,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
     
     <PreferenceCategory
+          android:title="@string/general_category">
+
+          <ListPreference
+               android:key="qs_quick_pulldown"
+               android:title="@string/qs_quick_pulldown"
+               android:entries="@array/quick_pulldown_entries"
+               android:entryValues="@array/quick_pulldown_values"
+               android:defaultValue="0" />
+     </PreferenceCategory>
+    
+    <PreferenceCategory
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_show_brightness_slider_title">
 
