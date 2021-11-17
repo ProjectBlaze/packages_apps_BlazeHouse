@@ -17,7 +17,15 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <Preference
+        android:key="traffic"
+        android:fragment="com.blaze.house.fragments.Traffic"
+        android:title="@string/traffic_title"
+        android:summary="@string/traffic_summary"
+        app:allowDividerAbove="true" />
     
     <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
