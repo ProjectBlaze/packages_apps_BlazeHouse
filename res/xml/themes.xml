@@ -12,6 +12,12 @@
             android:fragment="com.blaze.house.fragments.FontsPicker"/>
 
         <Preference
+            android:key="monet_engine"
+            android:title="@string/monet_engine_title"
+            android:summary="@string/monet_engine_summary"
+            android:fragment="com.blaze.house.fragments.MonetEngine" />
+
+        <Preference
             android:key="android.theme.customization.icon_pack"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
