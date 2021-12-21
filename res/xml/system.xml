@@ -55,5 +55,12 @@
             android:summary="@string/volume_panel_on_left_summary"
             android:defaultValue="@*android:bool/config_audioPanelOnLeftSide" />
     </PreferenceCategory>
+    
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:order="24"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true"/>
 
 </PreferenceScreen>
