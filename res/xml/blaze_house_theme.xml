@@ -53,6 +53,13 @@
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="com.blaze.house.fragments.IconShapes"/>
 
+        <!-- Navbar Style -->
+        <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="com.blaze.house.fragments.NavbarStyles" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
