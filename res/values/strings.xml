@@ -185,5 +185,9 @@
     <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
     <string name="monet_engine_tint_background_title">Tint background</string>
     <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+
+    <!-- Custom Navigation bar -->
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
     
 </resources>
