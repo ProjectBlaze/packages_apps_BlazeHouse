@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.pixelextended.snowhouse.navigation.BubbleNavigationConstraintView
+    <com.blaze.house.navigation.BubbleNavigationConstraintView
         android:id="@+id/floating_top_bar_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,8 +35,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        	
+        <com.blaze.house.navigation.BubbleToggleView
+            android:id="@+id/themes_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:extensions_titleColorActive="@color/text_color"
+            app:extensions_colorActive="@color/color_active"
+            app:extensions_colorInactive="@color/color_inactive"
+            app:extensions_icon="@drawable/ic_themes_category"
+            app:extensions_shape="@drawable/navigation_transition_background_drawable_lockscreen"
+            app:extensions_title="@string/themes_category" />	
 
-        <org.pixelextended.snowhouse.navigation.BubbleToggleView
+        <com.blaze.house.navigation.BubbleToggleView
             android:id="@+id/status_bar_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,8 +57,19 @@
             app:extensions_icon="@drawable/ic_status_bar_category"
             app:extensions_shape="@drawable/navigation_transition_background_drawable_status_bar"
             app:extensions_title="@string/status_bar_category" />
+            
+            <com.blaze.house.navigation.BubbleToggleView
+            android:id="@+id/notifications_panel_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:extensions_titleColorActive="@color/text_color"
+            app:extensions_colorActive="@color/color_active"
+            app:extensions_colorInactive="@color/color_inactive"
+            app:extensions_icon="@drawable/ic_notifications_panel_category"
+            app:extensions_shape="@drawable/navigation_transition_background_drawable_notifications_panel"
+            app:extensions_title="@string/notifications_panel_category" />
 
-        <org.pixelextended.snowhouse.navigation.BubbleToggleView
+        <com.blaze.house.navigation.BubbleToggleView
             android:id="@+id/lockscreen_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +80,7 @@
             app:extensions_shape="@drawable/navigation_transition_background_drawable_lockscreen"
             app:extensions_title="@string/lockscreen_category" />
 
-        <org.pixelextended.snowhouse.navigation.BubbleToggleView
+        <com.blaze.house.navigation.BubbleToggleView
             android:id="@+id/system_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,19 +90,8 @@
             app:extensions_icon="@drawable/ic_system_category"
             app:extensions_shape="@drawable/navigation_transition_background_drawable_system"
             app:extensions_title="@string/system_category" />
-        
-        <org.pixelextended.snowhouse.navigation.BubbleToggleView
-            android:id="@+id/hardware_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:extensions_titleColorActive="@color/text_color"
-            app:extensions_colorActive="@color/color_active"
-            app:extensions_colorInactive="@color/color_inactive"
-            app:extensions_icon="@drawable/ic_hardware_category"
-            app:extensions_shape="@drawable/navigation_transition_background_drawable_lockscreen"
-            app:extensions_title="@string/hardware_category" />
 
-    </org.pixelextended.snowhouse.navigation.BubbleNavigationConstraintView>
+    </com.blaze.house.navigation.BubbleNavigationConstraintView>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"

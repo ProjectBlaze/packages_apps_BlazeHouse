@@ -54,14 +54,15 @@ import com.android.settings.SettingsPreferenceFragment;
 import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
 
 import com.blaze.house.categories.Lockscreen;
+import com.blaze.house.categories.NotificationsPanel;
 import com.blaze.house.categories.StatusBar;
 import com.blaze.house.categories.System;
-import com.blaze.house.categories.Hardware;
+import com.blaze.house.categories.Themes;
 
 import com.blaze.house.navigation.BubbleNavigationConstraintView;
 import com.blaze.house.navigation.BubbleNavigationChangeListener;
 
-public class BlazeHouse extends SettingsPreferenceFragment implements   
+public class BlazeHouse extends SettingsPreferenceFragment implements
        Preference.OnPreferenceChangeListener {
 
     private static final int MENU_HELP  = 0;
@@ -71,7 +72,7 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
 
         Resources res = getResources();
 
-        View view = inflater.inflate(R.layout.layout_extensions, container, false);
+        View view = inflater.inflate(R.layout.layout_blazehouse, container, false);
 
         BubbleNavigationConstraintView bubbleNavigationConstraintView =  (BubbleNavigationConstraintView) view.findViewById(R.id.floating_top_bar_navigation);
         ViewPager viewPager = view.findViewById(R.id.viewpager);
@@ -83,11 +84,13 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
             public void onNavigationChanged(View view, int position) {
                 if (view.getId() == R.id.status_bar_category) {
                     viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.notifications_panel_category) {
+                    viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.lockscreen_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.system_category) {
                     viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.hardware_category) {
+                } else if (view.getId() == R.id.themes_category) {
                     viewPager.setCurrentItem(position, true);
                 }
             }
@@ -120,10 +123,11 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
 
         PagerAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBar();
-            frags[1] = new Lockscreen();
-            frags[2] = new System();
-            frags[3] = new Hardware();
+	    frags[0] = new Themes();
+            frags[1] = new StatusBar();
+	    frags[2] = new NotificationsPanel();
+            frags[3] = new Lockscreen();
+            frags[4] = new System();
         }
 
         @Override
@@ -145,10 +149,11 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+	    getString(R.string.themes_category),
             getString(R.string.status_bar_category),
+	    getString(R.string.notifications_panel_category),
             getString(R.string.lockscreen_category),
-            getString(R.string.system_category),
-            getString(R.string.hardware_category)};
+            getString(R.string.system_category)};
 
         return titleString;
     }
@@ -156,7 +161,7 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.extensions_title);
+        getActivity().setTitle(R.string.blazehouse_title);
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
@@ -167,7 +172,7 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsProto.MetricsEvent.BLAZE_HOUSE;
     }
 
     @Override
@@ -187,8 +192,8 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_HELP, 0, R.string.extensions_dialog_title)
-                .setIcon(R.drawable.ic_extensions_info)
+        menu.add(0, MENU_HELP, 0, R.string.blazehouse_dialog_title)
+                .setIcon(R.drawable.ic_blazehouse_info)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
@@ -198,7 +203,7 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
             case MENU_HELP:
                 showDialogInner(MENU_HELP);
                 Toast.makeText(getActivity(),
-                (R.string.extensions_dialog_toast),
+                (R.string.blazehouse_dialog_toast),
                 Toast.LENGTH_LONG).show();
                 return true;
             default:
@@ -227,8 +232,8 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
             switch (id) {
                 case MENU_HELP:
                     return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.extensions_dialog_title)
-                    .setMessage(R.string.extensions_dialog_message)
+                    .setTitle(R.string.blazehouse_dialog_title)
+                    .setMessage(R.string.blazehouse_dialog_message)
                     .setCancelable(false)
                     .setNegativeButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {

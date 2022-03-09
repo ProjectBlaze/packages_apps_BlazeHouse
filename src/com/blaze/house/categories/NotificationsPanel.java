@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2016 The Dirty Unicorns Project
+ * Copyright (C) 2016 AospExtended ROM Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,23 +18,25 @@ package com.blaze.house.categories;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+
 import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class Lockscreen extends SettingsPreferenceFragment implements
+public class NotificationsPanel extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "Lockscreen";
+    private static final String TAG = "NotificationsPanel";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.lockscreen);
+        addPreferencesFromResource(R.xml.notificationspanel);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
@@ -58,5 +60,4 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         final String key = preference.getKey();
         return true;
     }
-
 }
