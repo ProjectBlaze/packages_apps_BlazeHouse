@@ -48,4 +48,7 @@
     <string name="blazehouse_dialog_title">Help us help you!</string>
     <string name="blazehouse_dialog_message">If you find a bug with any of these settings, report it in our Telegram Group. You MUST include the following when posting a bug report:\n\n1. A logcat or last_kmsg\n2. Kernel and mods used\n3. Useful information\n\nIf you fail to report something adequately, DO NOT expect things to be fixed.</string>
     <string name="blazehouse_dialog_toast">READ THE WHOLE THING!</string>
+
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 </resources>
