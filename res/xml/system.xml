@@ -32,6 +32,16 @@
    <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />         
+            android:defaultValue="false" /> 
+           
+   <PreferenceCategory
+        android:key="volume_category"
+        android:title="@string/volume_category">
 
+   <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title"
+        android:defaultValue="false" />
+    </PreferenceCategory>     
 </PreferenceScreen>
