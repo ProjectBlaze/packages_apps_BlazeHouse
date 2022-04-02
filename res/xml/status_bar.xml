@@ -26,6 +26,11 @@
         android:title="@string/traffic_title"
         android:summary="@string/traffic_summary"
         app:allowDividerAbove="true" />
+        
+    <Preference
+        android:key="battery_settings"
+        android:title="@string/battery_style_category_title"
+        android:fragment="com.blaze.house.fragments.StatusbarBattery" />    
     
     <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
