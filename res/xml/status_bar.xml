@@ -54,6 +54,12 @@
             android:key="show_vowifi_icon"
             android:title="@string/vowifi_icon_title"
             android:summary="@string/vowifi_icon_summary"
-            android:defaultValue="true" />        
-
+            android:defaultValue="true" />
+            
+      <com.blaze.house.preferences.SecureSettingSwitchPreference
+          android:key="enable_location_privacy_indicator"
+          android:title="@string/location_privacy_title"
+          android:summary="@string/location_privacy_summary"
+          android:defaultValue="true" />
+       
 </PreferenceScreen>

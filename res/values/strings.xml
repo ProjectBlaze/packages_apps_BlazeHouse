@@ -156,4 +156,8 @@
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+    
+    <!-- Location Privacy Indicator -->
+    <string name="location_privacy_title"> Show Location Privacy Indicator</string>
+    <string name="location_privacy_summary">Enable - Disable location privacy indicator in qs and sb</string>
 </resources>
