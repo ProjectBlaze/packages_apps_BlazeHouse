@@ -68,4 +68,10 @@
           android:summary="@string/location_privacy_summary"
           android:defaultValue="true" />
        
+     <com.blaze.house.preferences.SecureSettingSwitchPreference
+          android:key="combined_status_bar_signal_icons"
+          android:title="@string/combined_status_bar_signal_icons"
+          android:summary="@string/combined_status_bar_signal_icons_summary"
+          android:defaultValue="false"/>
+     
 </PreferenceScreen>
