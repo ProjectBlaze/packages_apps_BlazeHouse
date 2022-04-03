@@ -32,8 +32,10 @@ import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.blaze.BlazeUtils;
+import android.widget.Toast;
 
 import com.android.settings.R;
+import android.provider.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class System extends SettingsPreferenceFragment implements
@@ -41,6 +43,9 @@ public class System extends SettingsPreferenceFragment implements
 
     private static final String TAG = "System";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+
+    private ListPreference mTorchPowerButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,14 @@ public class System extends SettingsPreferenceFragment implements
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+             // screen off torch
+        mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+        int mTorchPowerButtonValue = Settings.System.getInt(resolver,
+                Settings.System.TORCH_POWER_BUTTON_GESTURE, 0);
+        mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
+        mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
+        mTorchPowerButton.setOnPreferenceChangeListener(this);
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!BlazeUtils.isVoiceCapable(getActivity())) {
@@ -73,7 +86,16 @@ public class System extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mTorchPowerButton) {
+            int mTorchPowerButtonValue = Integer.valueOf((String) objValue);
+            int index = mTorchPowerButton.findIndexOfValue((String) objValue);
+            mTorchPowerButton.setSummary(
+                    mTorchPowerButton.getEntries()[index]);
+            Settings.System.putInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE,
+                    mTorchPowerButtonValue);
+            return true;
+        }
         return true;
     }
 }
