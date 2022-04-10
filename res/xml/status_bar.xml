@@ -76,10 +76,4 @@
        android:summaryOff="@string/camera_privacy_indicator_summary_off"
        android:defaultValue="true" />    
        
-     <com.blaze.house.preferences.SecureSettingSwitchPreference
-          android:key="combined_status_bar_signal_icons"
-          android:title="@string/combined_status_bar_signal_icons"
-          android:summary="@string/combined_status_bar_signal_icons_summary"
-          android:defaultValue="false"/>
-     
 </PreferenceScreen>
