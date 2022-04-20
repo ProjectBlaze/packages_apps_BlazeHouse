@@ -26,6 +26,12 @@
         android:title="@string/traffic_title"
         android:summary="@string/traffic_summary"
         app:allowDividerAbove="true" />
+
+    <Preference
+        android:key="clock"
+        android:title="@string/status_bar_clock_title"
+        android:summary="@string/status_bar_clock_summary"
+        android:fragment="com.blaze.house.fragments.Clock" />
         
     <Preference
         android:key="battery_settings"
