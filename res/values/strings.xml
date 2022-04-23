@@ -45,6 +45,7 @@
     <string name="themes_category">Themes</string>
     <string name="build_tweaks_summary_title">Get Amazed with BLAZE!!!</string>
     <string name="listview">ListView</string>
+    <string name="udfps_category">UDFPS</string>
 
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -270,4 +271,10 @@
     <!-- QS date -->
     <string name="qs_date_title">Date</string>
     <string name="qs_date_summary">Display date in quick status bar header</string>
+
+    <!-- UDFPS Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">UDFPS haptic feedback</string>
+    <string name="udfps_haptic_feedback_summary">Vibrate when touching UDFPS icon</string>
+    <string name="udfps_settings_title">UDFPS settings</string>
+    <string name="udfps_settings_summary">Customizations for the UDFPS</string>
 </resources>
