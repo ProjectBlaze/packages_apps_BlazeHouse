@@ -305,4 +305,10 @@
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Transparency</string>
     <string name="qs_transparency_summary">Choose how transparent you want your QS Panel to be (Requires SystemUI)</string>
+
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Clear all notification button</string>
+    <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
+    <string name="notification_material_dismiss_style_title">Button style</string>
+    <string name="notification_material_dismiss_bgstyle_title">Button background</string>
 </resources>
