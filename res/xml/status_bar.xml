@@ -39,47 +39,53 @@
         android:fragment="com.blaze.house.fragments.StatusbarBattery" />    
     
     <com.blaze.house.preferences.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_gesture"
-            android:title="@string/double_tap_to_sleep_statusbar_title"
-            android:summary="@string/double_tap_to_sleep_statusbar_summary"
-            android:defaultValue="true" />
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_statusbar_title"
+        android:summary="@string/double_tap_to_sleep_statusbar_summary"
+        android:defaultValue="true" />
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="use_old_mobiletype"
+        android:title="@string/use_old_mobiletype_title"
+        android:summary="@string/use_old_mobiletype_summary"
+        android:defaultValue="false" />
             
     <com.blaze.house.preferences.SystemSettingSwitchPreference
-             android:key="show_fourg_icon"
-             android:title="@string/show_fourg_icon_title"
-             android:summary="@string/show_fourg_icon_summary"
-             android:defaultValue="false"/>
+        android:key="show_fourg_icon"
+        android:title="@string/show_fourg_icon_title"
+        android:summary="@string/show_fourg_icon_summary"
+        android:defaultValue="false"/>
         
     <com.blaze.house.preferences.SystemSettingSwitchPreference
-            android:key="show_volte_icon"
-            android:title="@string/volte_icon_title"
-            android:summary="@string/volte_icon_summary"
-            android:defaultValue="true" />
+        android:key="show_volte_icon"
+        android:title="@string/volte_icon_title"
+        android:summary="@string/volte_icon_summary"
+        android:defaultValue="true" />
             
     <com.blaze.house.preferences.SystemSettingSwitchPreference
-            android:key="show_vowifi_icon"
-            android:title="@string/vowifi_icon_title"
-            android:summary="@string/vowifi_icon_summary"
-            android:defaultValue="true" />
+        android:key="show_vowifi_icon"
+        android:title="@string/vowifi_icon_title"
+        android:summary="@string/vowifi_icon_summary"
+        android:defaultValue="true" />
             
-     <com.blaze.house.preferences.SystemSettingSwitchPreference
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
         android:key="data_disabled_icon"
         android:title="@string/data_disabled_icon_title"
         android:summary="@string/data_disabled_icon_summary"
         android:defaultValue="true"/>       
             
-      <com.blaze.house.preferences.SecureSettingSwitchPreference
-          android:key="enable_location_privacy_indicator"
-          android:title="@string/location_privacy_indicator_title"
-          android:summaryOn="@string/location_privacy_indicator_summary_on"
-          android:summaryOff="@string/location_privacy_indicator_summary_off"
-          android:defaultValue="true" />
+    <com.blaze.house.preferences.SecureSettingSwitchPreference
+        android:key="enable_location_privacy_indicator"
+        android:title="@string/location_privacy_indicator_title"
+        android:summaryOn="@string/location_privacy_indicator_summary_on"
+        android:summaryOff="@string/location_privacy_indicator_summary_off"
+        android:defaultValue="true" />
           
-      <com.blaze.house.preferences.SecureSettingSwitchPreference
-       android:key="enable_camera_privacy_indicator"
-       android:title="@string/camera_privacy_indicator_title"
-       android:summaryOn="@string/camera_privacy_indicator_summary_on"
-       android:summaryOff="@string/camera_privacy_indicator_summary_off"
-       android:defaultValue="true" />    
+    <com.blaze.house.preferences.SecureSettingSwitchPreference
+        android:key="enable_camera_privacy_indicator"
+        android:title="@string/camera_privacy_indicator_title"
+        android:summaryOn="@string/camera_privacy_indicator_summary_on"
+        android:summaryOff="@string/camera_privacy_indicator_summary_off"
+        android:defaultValue="true" />    
        
 </PreferenceScreen>
