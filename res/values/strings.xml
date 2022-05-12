@@ -132,6 +132,9 @@
     <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
     <string name="volte_vowifi_override_title">VoWiFi override</string>
     <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
+    <string name="vowifi_icon_enabled">VoWiFi icon enabled</string>
+    <string name="vowifi_icon_disabled">VoWiFi icon disabled</string>
+    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi instead of VoLTE icon</string>
 
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
