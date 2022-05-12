@@ -42,6 +42,12 @@
             android:summary="@string/notification_material_dismiss_summary"
             android:defaultValue="false" />
 
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
+
         <com.blaze.house.preferences.SystemSettingSeekBarPreference
             android:key="notification_material_dismiss_style"
             android:title="@string/notification_material_dismiss_style_title"
