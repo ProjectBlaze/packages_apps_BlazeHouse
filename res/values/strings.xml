@@ -351,4 +351,12 @@
     <!-- Annoying Notifications -->
     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+    <!-- StatusBar Padding title -->
+    <string name="statusbar_padding">Status Bar Paddings</string>
+
+    <!-- Statusbar left_right padding -->
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
+
 </resources>

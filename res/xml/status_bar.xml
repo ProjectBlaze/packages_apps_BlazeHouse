@@ -115,4 +115,24 @@
         android:summaryOff="@string/camera_privacy_indicator_summary_off"
         android:defaultValue="true" />    
        
+    <PreferenceCategory
+        android:key="statusbar_padding"
+        android:title="@string/statusbar_padding" >
+
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_left_padding"
+            android:title="@string/statusbar_left_padding"
+            android:max="50"
+            settings:min="0"
+            android:defaultValue="2"/>
+
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_right_padding"
+            android:title="@string/statusbar_right_padding"
+            android:max="50"
+            settings:min="0"
+            android:defaultValue="2"/>
+
+    </PreferenceCategory>       
+
 </PreferenceScreen>
