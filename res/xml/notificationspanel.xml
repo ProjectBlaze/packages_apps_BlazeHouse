@@ -34,18 +34,29 @@
             android:min="1" />
 
     <PreferenceCategory
+        android:title="@string/notifications_category">
+           
+            <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
+
+            <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/notification_material_dismiss_title">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:title="@string/notification_material_dismiss_title"
             android:summary="@string/notification_material_dismiss_summary"
-            android:defaultValue="false" />
-
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
-            android:key="less_boring_heads_up"
-            android:title="@string/less_boring_heads_up_title"
-            android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
         <com.blaze.house.preferences.SystemSettingSeekBarPreference
