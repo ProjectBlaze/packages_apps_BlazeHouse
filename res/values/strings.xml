@@ -362,4 +362,8 @@
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Colored icons</string>
     <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
+
+    <!-- Colorful battery icon -->
+    <string name="battery_level_colors_title">Toggle colorful battery icon</string>
+    <string name="battery_level_colors_summary">Each battery level drop is color coded</string>
 </resources>
