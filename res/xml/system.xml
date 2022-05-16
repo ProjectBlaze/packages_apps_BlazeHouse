@@ -52,6 +52,16 @@
         android:entryValues="@array/torch_power_button_gesture_values" />
 
    <PreferenceCategory
+       android:title="@string/extra_category">
+
+       <com.blaze.house.preferences.SystemSettingSwitchPreference
+           android:key="wake_when_plugged_or_unplugged"
+           android:title="@string/wake_when_plugged_or_unplugged_title"
+           android:summary="@string/wake_when_plugged_or_unplugged_summary"
+           android:defaultValue="true" />
+   </PreferenceCategory>
+
+   <PreferenceCategory
         android:key="developer_options_category"
         android:title="@string/developer_options_category">
 
