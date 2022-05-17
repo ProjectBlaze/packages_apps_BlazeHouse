@@ -24,6 +24,14 @@
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
 
+    <!-- QS Battery estimates -->
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_battery_estimate"
+            android:title="@string/qs_show_battery_estimate_title"
+            android:summaryOn="@string/qs_show_battery_estimate_summary_on"
+            android:summaryOff="@string/qs_show_battery_estimate_summary_off"
+            android:defaultValue="true" />
+
     <com.blaze.house.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
