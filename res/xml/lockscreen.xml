@@ -77,12 +77,17 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+       android:key="pulse_category"
+       android:title="@string/pulse_category">
+
     <!-- Pulse music visualizer -->
     <Preference
         android:key="pulse_settings"
         android:title="@string/pulse_settings"
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.blaze.house.fragments.PulseSettings" />
+    </PreferenceCategory>
 
     <!-- Udfps options -->
     <PreferenceCategory

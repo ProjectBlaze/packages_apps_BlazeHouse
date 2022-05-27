@@ -205,6 +205,7 @@
     <string name="keygaurd_media_art_summary">Display media art as lockscreen background</string>
 
     <!-- Pulse music visualizer -->
+    <string name="pulse_category">Pulse</string>
     <string name="pulse_help_policy_notice_title">About Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio graphic equalizer when music plays on the device</string>
     <string name="pulse_settings">Pulse</string>
