@@ -56,6 +56,24 @@
             android:defaultValue="true" />
 
     <PreferenceCategory
+        android:key="lockscreen_weather"
+        android:title="@string/lockscreen_weather_category" />
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_enabled"
+   	    android:icon="@drawable/ic_cloud"
+            android:title="@string/lockscreen_weather_enabled_title"
+            android:summary="@string/lockscreen_weather_enabled_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="omnijaws_settings"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/lockscreen_weather_settings_title"
+            android:summary="@string/lockscreen_weather_settings_summary"
+            android:fragment="com.blaze.house.fragments.OmniJawsSettings" />
+
+    <PreferenceCategory
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_category_title"
         android:order="1002">
