@@ -22,63 +22,81 @@
         <Preference
             android:key="theme_category"
             android:title="@string/theme_title"
+            android:summary="@string/theme_summary"
             android:fragment="com.blaze.house.categories.ThemeSettings"
+            settings:layout="@layout/blaze_dashboard_preference_single"
             android:icon="@drawable/ic_settings_theme"/>
         
         <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.blaze.house.categories.StatusBarSettings" 
+            settings:layout="@layout/blaze_dashboard_preference_top"
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
+            android:summary="@string/quicksettings_summary"
             android:fragment="com.blaze.house.categories.QuickSettings"
+            settings:layout="@layout/blaze_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
+            android:summary="@string/button_summary"
             android:fragment="com.blaze.house.categories.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
+            settings:layout="@layout/blaze_dashboard_preference_top"
+            android:icon="@drawable/ic_settings_buttons" />
 
         <!-- Gestures -->
         <Preference
             android:key="gestures_category"
-            android:title="@string/gestures_title" 
+            android:title="@string/gestures_title"
+            android:summary="@string/gestures_summary"
             android:fragment="com.blaze.house.categories.GestureSettings"
-            android:icon="@drawable/ic_settings_gestures"/>
+            settings:layout="@layout/blaze_dashboard_preference_middle"
+            android:icon="@drawable/ic_settings_sos_gestures"/>
 
         <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title" 
+            android:summary="@string/lockscreen_summary"
             android:fragment="com.blaze.house.categories.LockScreenSettings"
+            settings:layout="@layout/blaze_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
             android:fragment="com.blaze.house.categories.NotificationSettings"
+            settings:layout="@layout/blaze_dashboard_preference_top"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- system -->
         <Preference
             android:key="system_category"
-            android:title="@string/system_title" 
+            android:title="@string/system_title"
+            android:summary="@string/system_summary"
             android:fragment="com.blaze.house.categories.SystemSettings"
+            settings:layout="@layout/blaze_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_system"/>
         
         <!-- Misc -->
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title" 
+            android:summary="@string/misc_summary"
             android:fragment="com.blaze.house.categories.MiscSettings"
+            settings:layout="@layout/blaze_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_miscs"/>
 
 </PreferenceScreen>
