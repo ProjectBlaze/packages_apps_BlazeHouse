@@ -46,7 +46,8 @@
     <string name="build_tweaks_summary_title">Get Amazed with BLAZE!!!</string>
     <string name="listview">ListView</string>
     <string name="udfps_category">UDFPS</string>
-
+    <string name = "general_category">General</string> 
+    
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
     <string name="blazehouse_dialog_message">If you find a bug with any of these settings, report it in our Telegram Group. You MUST include the following when posting a bug report:\n\n1. A logcat or last_kmsg\n2. Kernel and mods used\n3. Useful information\n\nIf you fail to report something adequately, DO NOT expect things to be fixed.</string>
@@ -390,5 +391,9 @@
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
+    <!-- Wp zoom --> 
+    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
+    <string name="use_wp_zoom_summary">Reboot after toggling</string> 
 
 </resources>

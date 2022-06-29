@@ -59,7 +59,7 @@
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_category_title"
         android:order="1002">
-
+     
         <com.blaze.house.preferences.CustomSystemSeekBarPreference
             android:key="lockscreen_media_blur"
             android:title="@string/lockscreen_media_blur_title"
@@ -102,5 +102,14 @@
 
     </PreferenceCategory>
 
-</PreferenceScreen>
+    <PreferenceCategory
+        android:key="lockscreen_general_category"
+        android:title="@string/general_category">
 
+        <com.blaze.house.preferences.SystemSettingSwitchPreference 
+             android:key="use_wp_zoom"
+             android:title="@string/use_wp_zoom_title"
+             android:summary="@string/use_wp_zoom_summary"
+             android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen> 
