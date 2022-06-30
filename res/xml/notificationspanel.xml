@@ -56,6 +56,18 @@
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
+	    <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="reticker_status"
+            android:title="@string/reticker_title"
+            android:summary="@string/reticker_summary"
+            android:defaultValue="false" />
+
+            <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="reticker_colored"
+            android:title="@string/reticker_colored_title"
+            android:summary="@string/reticker_colored_summary"
+            android:dependency="reticker_status"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
