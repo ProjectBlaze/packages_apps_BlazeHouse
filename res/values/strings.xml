@@ -396,4 +396,7 @@
     <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
     <string name="use_wp_zoom_summary">Reboot after toggling</string> 
 
+    <!-- Statusbar Items -->
+    <string name="sb_icons">Statusbar Icons</string>
+    <string name="statusbar_items_category">Statusbar items</string>
 </resources>
