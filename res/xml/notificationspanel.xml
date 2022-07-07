@@ -62,6 +62,13 @@
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="heads_up_snooze_time"
+            android:title="@string/heads_up_snooze_title"
+            android:entries="@array/heads_up_snooze_entries"
+            android:entryValues="@array/heads_up_snooze_values"
+            android:persistent="false" />
+
 	    <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="reticker_status"
             android:title="@string/reticker_title"
