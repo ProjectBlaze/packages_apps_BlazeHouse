@@ -80,6 +80,12 @@
             android:summary="@string/reticker_colored_summary"
             android:dependency="reticker_status"
             android:defaultValue="false" />
+
+         <Preference
+            android:key="ticker_settings"
+            android:title="@string/ticker_title"
+            android:summary="@string/ticker_summary"
+            android:fragment="com.blaze.house.TickerSettings"/> 
     </PreferenceCategory>
 
     <PreferenceCategory
