@@ -63,4 +63,3 @@ public class StatusBar extends SettingsPreferenceFragment implements
     }
 
 }
-

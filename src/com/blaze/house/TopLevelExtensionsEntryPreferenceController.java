@@ -20,6 +20,7 @@ import android.content.Context;
 
 import com.android.settings.core.BasePreferenceController;
 
+
 public class TopLevelExtensionsEntryPreferenceController extends BasePreferenceController {
 
     public TopLevelExtensionsEntryPreferenceController(Context context, String preferenceKey) {
