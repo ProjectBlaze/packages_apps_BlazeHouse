@@ -178,4 +178,8 @@
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Display media cover art when available</string>
 
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">Clock show seconds</string>
+    <string name="status_bar_clock_show_seconds_desc">Show hours, minutes, and seconds</string>
+
 </resources>
