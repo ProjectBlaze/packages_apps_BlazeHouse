@@ -33,6 +33,11 @@
         </Preference>
 
     </PreferenceCategory>
+    
+    <Preference
+        android:key="status_bar_clock"
+        android:fragment="com.blaze.house.fragments.ClockDateSettings"
+        android:title="@string/status_bar_clock_title"  />
 
     <PreferenceCategory
         android:key="network_category"
