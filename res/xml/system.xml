@@ -62,5 +62,13 @@
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
             android:defaultValue="true"/>
+            
+    <com.blaze.house.preferences.SystemSettingListPreference
+            android:key="volume_key_cursor_control"
+            android:title="@string/volbtn_cursor_control_title"
+            android:entries="@array/volbtn_cursor_control_entries"
+            android:entryValues="@array/volbtn_cursor_control_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
 </PreferenceScreen>
