@@ -20,13 +20,17 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceViewHolder;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.blaze.BlazeUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -35,6 +39,7 @@ public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "System";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +47,13 @@ public class System extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system);
 
-        ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!BlazeUtils.isVoiceCapable(getActivity())) {
+                prefSet.removePreference(incallVibCategory);
+        }
     }
 
     @Override
