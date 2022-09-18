@@ -148,4 +148,8 @@
     <string name="network_traffic_layout_h">Horizontal</string>
     <string name="network_traffic_layout_v">Vertical</string>
     <string name="nettraf_font_size">Single net font size</string>
+
+    <!-- Statusbar Items -->
+    <string name="sb_icons">Statusbar Icons</string>
+    <string name="statusbar_items_category">Statusbar items</string>
 </resources>
