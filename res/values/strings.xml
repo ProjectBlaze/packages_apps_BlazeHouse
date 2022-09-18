@@ -143,4 +143,9 @@
     <!--3-Finger screenshot-->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
+    <!-- Statusbar Items -->
+    <string name="statusbar_icons">Icons</string>
+    <string name="statusbar_items_title">Statusbar items</string>
+    <string name="statusbar_items_summary">Tune Statusbar items</string>
 </resources>
