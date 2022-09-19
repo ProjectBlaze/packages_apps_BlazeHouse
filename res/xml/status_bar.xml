@@ -34,6 +34,10 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="network_category"
+        android:title="@string/network_category">
+
     <!--Network traffic -->
     <Preference 
        android:key="network_traffic"
@@ -64,5 +68,7 @@
         android:title="@string/show_fourg_icon_title"
         android:summary="@string/show_fourg_icon_summary"
         android:defaultValue="false"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
