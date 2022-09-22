@@ -4,6 +4,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
  
+    <com.blaze.house.preferences.SystemSettingListPreference
+            android:key="settings_dashboard_style"
+            android:title="@string/settings_dashboard_style_title"
+            android:entries="@array/settings_dashboard_style_entries"
+            android:entryValues="@array/settings_dashboard_style_values"
+            android:defaultValue="0" />
+
     <!-- Theming -->
     	<Preference
             android:key="android.theme.customization.fonts"
