@@ -33,5 +33,12 @@
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
-            android:fragment="com.blaze.house.fragments.IconShapes"/>     
+            android:fragment="com.blaze.house.fragments.IconShapes"/> 
+            
+        <com.blaze.house.preferences.SystemSettingListPreference
+            android:key="settings_dashboard_style"
+            android:title="@string/settings_dashboard_style_title"
+            android:entries="@array/settings_dashboard_style_entries"
+            android:entryValues="@array/settings_dashboard_style_values"
+            android:defaultValue="0" />    
 </PreferenceScreen>
