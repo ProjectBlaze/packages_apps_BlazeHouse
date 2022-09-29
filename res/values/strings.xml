@@ -156,4 +156,7 @@
     <string name="settings_dashboard_style_title">Settings Styles</string>
     <string name="settings_dashboard_style_1">Old UI</string>
     <string name="settings_dashboard_style_2">New UI</string>
+    
+    <!-- Lock screen media blur -->
+    <string name="lockscreen_media_blur_title">Media artwork blur level</string>
 </resources>
