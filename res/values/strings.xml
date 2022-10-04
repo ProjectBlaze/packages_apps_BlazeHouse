@@ -41,6 +41,7 @@
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="themes_category">Themes</string>
+    <string name="theme_category">Theming</string>
     <string name="build_tweaks_summary_title">Get Amazed with BLAZE!!!</string>
     <string name="listview">ListView</string>
     <string name="udfps_category">UDFPS</string>
@@ -158,7 +159,9 @@
     <string name="settings_dashboard_style_2">New UI</string>
     
     <!-- Lock screen media blur -->
+    <string name="lockscreen_media_art_category_title">Media art</string>
     <string name="lockscreen_media_blur_title">Media artwork blur level</string>
+
     <!-- Clock position -->
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_position_center">Center</string>

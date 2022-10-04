@@ -16,6 +16,9 @@
 
     </PreferenceCategory>
  
+    <PreferenceCategory
+        android:title="@string/theme_category">
+
     <!-- Theming -->
     	<Preference
             android:key="android.theme.customization.fonts"
@@ -35,7 +38,7 @@
             android:summary="@string/theme_customization_signal_icon_summary"
             android:fragment="com.blaze.house.fragments.SignalIcons"/>
 
-      <Preference
+       <Preference
             android:key="android.theme.customization.wifi_icon"
             android:title="@string/theme_customization_wifi_icon_title"
             android:summary="@string/theme_customization_wifi_icon_summary"
@@ -52,5 +55,6 @@
             android:title="@string/settings_dashboard_style_title"
             android:entries="@array/settings_dashboard_style_entries"
             android:entryValues="@array/settings_dashboard_style_values"
-            android:defaultValue="0" />    
+            android:defaultValue="0" />
+        </PreferenceCategory>
 </PreferenceScreen>
