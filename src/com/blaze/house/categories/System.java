@@ -45,6 +45,7 @@ public class System extends SettingsPreferenceFragment implements
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
     private ListPreference mTorchPowerButton;
+    private Preference mChargingLeds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,10 +63,15 @@ public class System extends SettingsPreferenceFragment implements
         mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
         mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
         mTorchPowerButton.setOnPreferenceChangeListener(this);
+	mChargingLeds = (Preference) findPreference("charging_light");
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!BlazeUtils.isVoiceCapable(getActivity())) {
                 prefSet.removePreference(incallVibCategory);
+        } else if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            prefSet.removePreference(mChargingLeds);
         }
     }
 

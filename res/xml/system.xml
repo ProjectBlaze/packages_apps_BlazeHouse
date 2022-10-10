@@ -71,6 +71,11 @@
             android:summary="%s"
             android:defaultValue="0" />
 
+   <Preference
+        android:key="charging_light"
+        android:fragment="com.blaze.house.fragments.BatteryLightSettings"
+        android:title="@string/battery_light_settings" />
+
    <PreferenceCategory
         android:key="developer_options_category"
         android:title="@string/developer_options_category">
