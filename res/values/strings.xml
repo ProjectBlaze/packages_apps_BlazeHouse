@@ -321,4 +321,8 @@
     <string name="udfps_haptic_feedback_summary">Vibrate when touching UDFPS icon</string>
     <string name="udfps_settings_title">UDFPS settings</string>
     <string name="udfps_settings_summary">Customizations for the UDFPS</string>
+
+    <!-- Screen off UDFPS -->
+    <string name="screen_off_udfps_title">Screen off UDFPS</string>
+    <string name="screen_off_udfps_summary">Keep UDFPS enabled when the screen is off</string>
 </resources>
