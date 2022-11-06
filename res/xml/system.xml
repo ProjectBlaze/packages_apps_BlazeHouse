@@ -68,6 +68,12 @@
         android:fragment="com.blaze.house.fragments.BatteryLightSettings"
         android:title="@string/battery_light_settings" />
 
+   <com.blaze.house.preferences.SystemSettingSwitchPreference
+           android:key="back_gesture_haptic"
+           android:title="@string/back_gesture_haptic_title"
+           android:summary="@string/back_gesture_haptic_summary"
+           android:defaultValue="false" />
+
    </PreferenceCategory>
         
 
