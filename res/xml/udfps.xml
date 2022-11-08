@@ -8,6 +8,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/udfps_category">
 
+    <Preference
+        android:key="udfps_icon_picker"
+        android:title="@string/udfps_icon_picker_title"
+        android:summary="@string/udfps_icon_picker_summary"
+        android:fragment="com.blaze.house.fragments.UdfpsIconPicker" />
+
+    <Preference
+        android:key="udfps_recognizing_animation_preview"
+        android:title="@string/udfps_animation_title"
+        android:summary="@string/udfps_animation_summary"
+        android:fragment="com.blaze.house.fragments.UdfpsAnimation"/>
+
     <com.blaze.house.preferences.SystemSettingSwitchPreference
         android:key="udfps_haptic_feedback"
         android:title="@string/udfps_haptic_feedback_title"

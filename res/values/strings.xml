@@ -19,6 +19,7 @@
     <string name="blazehouse_title">BlazeHouse</string>
     <string name="add">Add</string>
     <string name="advanced">Advanced</string>
+    <string name="enable">Enable</string>
     <string name="cancel">Cancel</string>
     <string name="default_text">Default</string>
     <string name="dlg_ok">OK</string>
@@ -45,7 +46,7 @@
     <string name="build_tweaks_summary_title">Get Amazed with BLAZE!!!</string>
     <string name="listview">ListView</string>
     <string name="udfps_category">UDFPS</string>
-    <string name = "general_category">General</string> 
+    <string name="general_category">General</string> 
     <string name="network_category">Network Options</string>
     <string name="qs_category">QS Panel</string>
     
@@ -332,4 +333,12 @@
     <!-- Misc gesture settings -->
     <string name="back_gesture_haptic_title">Haptic feedback</string>
     <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+
+    <!-- UDFPS icon picker -->
+    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite icon</string>
+
+    <!-- UDFPS animation -->
+    <string name="udfps_animation_title">UDFPS animation effect</string>
+    <string name="udfps_animation_summary">Choose animation effect</string>
 </resources>
