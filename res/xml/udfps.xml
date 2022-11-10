@@ -20,11 +20,11 @@
         android:summary="@string/udfps_animation_summary"
         android:fragment="com.blaze.house.fragments.UdfpsAnimation"/>
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
+    <!--com.blaze.house.preferences.SystemSettingSwitchPreference
         android:key="udfps_haptic_feedback"
         android:title="@string/udfps_haptic_feedback_title"
         android:summary="@string/udfps_haptic_feedback_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true" /-->
 
     <!-- Screen OFF UDFPS -->
     <com.blaze.house.preferences.SecureSettingSwitchPreference
