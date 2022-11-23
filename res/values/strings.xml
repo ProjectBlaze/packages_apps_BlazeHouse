@@ -400,4 +400,8 @@
     <string name="navigation_bar_category">Navigation bar</string>
     <string name="navigation_bar_title">On-screen navigation bar</string>
     <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Hide IME button space</string>
+    <string name="navigation_bar_ime_space_summary">Hide IME button space below keyboard</string>
 </resources>
