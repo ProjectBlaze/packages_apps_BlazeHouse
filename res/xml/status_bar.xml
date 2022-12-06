@@ -84,6 +84,14 @@
         android:title="@string/data_disabled_icon_title"
         android:summary="@string/data_disabled_icon_summary"
         android:defaultValue="true"/>
+
+    <!-- Combined signal icons -->
+    <com.blaze.house.preferences.OverlaySwitchPreference
+        android:key="com.android.systemui.flags.no_combined_icons"
+        android:title="@string/combined_signal_icons_title"
+        android:summary="@string/combined_signal_icons_summary"
+        android:defaultValue="true" />
+        
     </PreferenceCategory>
     
     <PreferenceCategory

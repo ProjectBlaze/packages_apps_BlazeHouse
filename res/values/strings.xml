@@ -341,4 +341,8 @@
     <!-- UDFPS animation -->
     <string name="udfps_animation_title">UDFPS animation effect</string>
     <string name="udfps_animation_summary">Choose animation effect</string>
+
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icons_title">Combined signal icons</string>
+    <string name="combined_signal_icons_summary">Show signal and WiFi combined\nRequires a SystemUI restart</string>
 </resources>
