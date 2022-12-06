@@ -74,6 +74,12 @@
            android:summary="@string/back_gesture_haptic_summary"
            android:defaultValue="false" />
 
+  <com.blaze.house.preferences.SystemSettingSwitchPreference
+           android:key="wake_when_plugged_or_unplugged"
+           android:title="@string/wake_when_plugged_or_unplugged_title"
+           android:summary="@string/wake_when_plugged_or_unplugged_summary"
+           android:defaultValue="true" />
+
    </PreferenceCategory>
         
 
