@@ -41,6 +41,16 @@
     </PreferenceCategory>
     
     <PreferenceCategory
+        android:title="@string/notifications_category">
+
+            <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="reticker"
         android:title="@string/reticker_category" >
 

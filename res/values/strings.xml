@@ -49,6 +49,7 @@
     <string name="general_category">General</string> 
     <string name="network_category">Network Options</string>
     <string name="qs_category">QS Panel</string>
+    <string name="notifications_category">Notifications</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -350,4 +351,8 @@
     <string name="extra_category">Extra</string>
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 </resources>
