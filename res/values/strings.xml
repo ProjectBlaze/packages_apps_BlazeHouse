@@ -435,4 +435,16 @@
 
     <!-- QS Header Size -->
     <string name="large_qs_switch_title">QS Header Size</string>
+    
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Combined QS Element Styles</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-Tone Accent</string>
+    <string name="qs_color_pop">Color Pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
 </resources>
