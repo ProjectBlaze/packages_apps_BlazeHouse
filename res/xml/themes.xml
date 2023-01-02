@@ -10,6 +10,12 @@
             android:summary="@string/monet_engine_summary"
             android:fragment="com.blaze.house.fragments.MonetEngine" />
 
+       <Preference
+            android:key="android.theme.customization.lockscreen_clock_font"
+            android:title="@string/theme_customization_lock_clock_title"
+            android:summary="@string/theme_customization_lock_clock_summary"
+            android:fragment="com.blaze.house.fragments.LockClockFonts" />
+
         <!-- Theming -->
     	<Preference
             android:key="android.theme.customization.fonts"
