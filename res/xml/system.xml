@@ -77,6 +77,16 @@
 	    android:entryValues="@array/torch_power_button_gesture_values"
 	    android:defaultValue="0" />
 
+    <!-- Parallel Space -->
+    <Preference
+        android:key="parallel_space"
+        android:title="@string/laboratory_parallel_space_title"
+        android:summary="@string/laboratory_parallel_space_summary">
+        <intent
+            android:targetPackage="ink.kscope.parallelspace"
+            android:targetClass="ink.kscope.parallelspace.MainActivity" />
+    </Preference>
+    
     </PreferenceCategory>
 
     <PreferenceCategory
