@@ -190,4 +190,13 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
+    <!-- Clock Settings -->
+    <string name="clock_style_category_title">Clock Settings</string>
+
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Center</string>
+    <string name="status_bar_clock_position_left">Left</string>
+    <string name="status_bar_clock_position_right">Right</string>
+    <string name="status_bar_clock_position_title">Clock position</string>
 </resources>
