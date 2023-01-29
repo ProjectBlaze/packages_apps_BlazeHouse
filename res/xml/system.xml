@@ -43,46 +43,60 @@
     <PreferenceCategory
         android:title="@string/general_category">
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:title="@string/three_finger_gesture"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="three_finger_gesture"
+            android:title="@string/three_finger_gesture"
+            android:summary="@string/three_finger_gesture_summary"
+            android:defaultValue="false" />
 
-    <com.blaze.house.preferences.SystemSettingListPreference
-        android:key="torch_power_button_gesture"
-        android:dialogTitle="@string/torch_power_button_gesture_title"
-        android:title="@string/torch_power_button_gesture_title"
-        android:summary="%s"
-        android:entries="@array/torch_power_button_gesture_entries"
-        android:entryValues="@array/torch_power_button_gesture_values"
-        android:defaultValue="0" />
+        <com.blaze.house.preferences.SystemSettingListPreference
+            android:key="torch_power_button_gesture"
+            android:dialogTitle="@string/torch_power_button_gesture_title"
+            android:title="@string/torch_power_button_gesture_title"
+            android:summary="%s"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values"
+            android:defaultValue="0" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="volbtn_music_controls"
-        android:title="@string/volume_button_music_control_title"
-        android:dependency="volume_rocker_wake"
-        android:summary="@string/volume_button_music_control_summary"
-        android:defaultValue="false" />
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="volbtn_music_controls"
+            android:title="@string/volume_button_music_control_title"
+            android:dependency="volume_rocker_wake"
+            android:summary="@string/volume_button_music_control_summary"
+            android:defaultValue="false" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:title="@string/volume_rocker_wake_title"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:title="@string/volume_rocker_wake_title"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
 
-    <com.blaze.house.preferences.SecureSettingSwitchPreference
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             android:title="@string/laboratory_ignore_window_secure_title"
             android:summary="@string/laboratory_ignore_window_secure_summary"
             android:defaultValue="false"/>
 
-    <com.blaze.house.preferences.SecureSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/global_actions_advanced_reboot_title"
-        android:summary="@string/global_actions_advanced_reboot_summary"
-        android:defaultValue="false" />
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="false" />
+
+        <!-- Unlock FPS for specific games -->
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="use_games_spoof"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary"
+            android:defaultValue="false" />
+
+        <!-- Unlimited google photos storage -->
+        <com.blaze.house.preferences.SystemSettingSwitchPreference       
+            android:key="use_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
