@@ -50,6 +50,7 @@
     <string name="network_category">Network Options</string>
     <string name="qs_category">QS Panel</string>
     <string name="notifications_category">Notifications</string>
+    <string name="dtts_category_header">Double tap to sleep</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -225,4 +226,8 @@
     <!-- Show old style mobile data icon -->
     <string name="use_old_mobiletype_title">Use old style mobile data icons</string>
     <string name="use_old_mobiletype_summary">Show mobile type icon on top of the signal indicator</string>
+
+    <!-- DT2S on statusbar-->
+    <string name="double_tap_sleep_gesture_title">Statusbar</string>
+    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
 </resources>
