@@ -24,6 +24,17 @@
         android:title="@string/enable_fingerprint_ripple_effect_title"
         android:summary="@string/enable_fingerprint_ripple_effect_summary"
         android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:title="@string/general_category">
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
     
     <!-- Udfps options -->
     <PreferenceCategory
