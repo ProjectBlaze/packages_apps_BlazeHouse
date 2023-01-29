@@ -18,7 +18,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
- 
+
+    <PreferenceCategory
+        android:title="@string/general_category">
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+    
     <!-- Udfps options -->
     <PreferenceCategory
         android:key="udfps_category"
