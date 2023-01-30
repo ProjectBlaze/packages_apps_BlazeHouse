@@ -51,6 +51,20 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="reticker_status"
+            android:title="@string/reticker_title"
+            android:summary="@string/reticker_summary"
+            android:order="9"
+            android:defaultValue="false" />
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:dependency="reticker_status"
+            android:key="reticker_colored"
+            android:title="@string/reticker_colored_title"
+            android:summary="@string/reticker_colored_summary"
+            android:order="10"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
