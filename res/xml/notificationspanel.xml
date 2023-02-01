@@ -31,9 +31,9 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/general_category">
+        android:title="@string/qs_category">
 
-	    <com.blaze.house.preferences.SecureSettingListPreference
+        <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
             android:entries="@array/qs_tile_shape_entries"
@@ -48,6 +48,11 @@
             settings:interval="1"
             android:max="10"         
             android:min="1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general_category">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"

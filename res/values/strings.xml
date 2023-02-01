@@ -52,6 +52,8 @@
     <string name="qs_category">QS Panel</string>
     <string name="notifications_category">Notifications</string>
     <string name="dtts_category_header">Double tap to sleep</string>
+    <string name="spoof_category">Spoofing Options</string>
+    <string name="gestures_category">Gestures</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>

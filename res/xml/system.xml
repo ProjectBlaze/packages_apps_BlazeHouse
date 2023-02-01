@@ -41,7 +41,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/general_category">
+        android:title="@string/gestures_category">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="three_finger_gesture"
@@ -57,6 +57,11 @@
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values"
             android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general_category">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="volbtn_music_controls"
@@ -83,6 +88,11 @@
             android:title="@string/global_actions_advanced_reboot_title"
             android:summary="@string/global_actions_advanced_reboot_summary"
             android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/spoof_category">
 
         <!-- Unlock FPS for specific games -->
         <com.blaze.house.preferences.SystemSettingSwitchPreference
