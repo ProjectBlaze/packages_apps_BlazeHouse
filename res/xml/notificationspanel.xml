@@ -33,12 +33,21 @@
     <PreferenceCategory
         android:title="@string/general_category">
 
-	<com.blaze.house.preferences.SecureSettingListPreference
+	    <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
             android:entries="@array/qs_tile_shape_entries"
             android:entryValues="@array/qs_tile_shape_values"
             android:defaultValue="2" />
+
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="10"
+            settings:interval="1"
+            android:max="10"         
+            android:min="1" />
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
