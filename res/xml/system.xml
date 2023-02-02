@@ -58,6 +58,12 @@
             android:entryValues="@array/torch_power_button_gesture_values"
             android:defaultValue="0" />
 
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="doze_pulse_on_double_tap"
+            android:title="@string/double_tap_on_doze_to_wake_title"
+            android:summary="@string/double_tap_on_doze_to_wake_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

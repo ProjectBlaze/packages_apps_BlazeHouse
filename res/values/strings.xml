@@ -357,4 +357,8 @@
     <!-- Hardware keys -->
     <string name="hardware_keys_category">Hardware navigation buttons</string>
     <string name="hardware_keys_disable_title">Disable hardware buttons</string>
+
+    <!-- Double Tap on Doze to wake -->
+    <string name="double_tap_on_doze_to_wake_title">Double-tap to wake on doze</string>
+    <string name="double_tap_on_doze_to_wake_summary">Double tap to wake when device is dreaming</string>
 </resources>
