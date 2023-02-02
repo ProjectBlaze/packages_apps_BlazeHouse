@@ -55,6 +55,7 @@
     <string name="dtts_category_header">Double tap to sleep</string>
     <string name="spoof_category">Spoofing Options</string>
     <string name="gestures_category">Gestures</string>
+    <string name="volume_category">Volume Buttons</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
