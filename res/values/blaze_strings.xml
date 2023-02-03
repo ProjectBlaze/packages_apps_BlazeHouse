@@ -109,4 +109,8 @@
     <string name="notifications_category_title">Annoying notifications protection</string>
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Settings contextual messages</string>
+    <string name="settings_contextual_message_summary">Enable settings homepage messages that changes base on current time of the day</string>
 </resources>

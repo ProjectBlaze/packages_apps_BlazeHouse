@@ -21,6 +21,13 @@
     <PreferenceCategory
         android:title="@string/general_category">
 
+    <!-- Settings Greetings -->    
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+          android:key="settings_contextual_messages"
+          android:title="@string/settings_contextual_message_title"
+          android:summary="@string/settings_contextual_message_summary"
+          android:defaultValue="false" />
+            
             <com.blaze.house.preferences.SecureSettingSwitchPreference
                 android:key="window_ignore_secure"
                 android:title="@string/laboratory_ignore_window_secure_title"
