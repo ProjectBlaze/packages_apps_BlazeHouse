@@ -56,6 +56,7 @@
     <string name="spoof_category">Spoofing Options</string>
     <string name="gestures_category">Gestures</string>
     <string name="volume_category">Volume Buttons</string>
+    <string name="privacy_category">Privacy Indicators (Requires Restart)</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -313,7 +314,7 @@
 
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Transparency</string>
-    <string name="qs_transparency_summary">Choose how transparent you want your QS Panel to be (Requires SystemUI)</string>
+    <string name="qs_transparency_summary">Choose how transparent you want your QS Panel to be (Requires SystemUI Restart)</string>
 	
     <!-- Unlimited google photos storage -->
     <string name="use_photos_spoof_title">Unlimited Photos storage</string>
@@ -365,4 +366,12 @@
     <!-- Separate signal icons -->
     <string name="separate_signal_icons_title">Separate signal icons</string>
     <string name="separate_signal_icons_summary">Show signal and WiFi separately\nRequires a SystemUI restart</string>
+
+    <!-- Privacy indicators -->
+    <string name="mic_camera_privacy_indicator_title">Mic and camera privacy indicator</string>
+    <string name="mic_camera_privacy_indicator_summary">Show indicator when any app uses mic or camera</string>
+    <string name="location_privacy_indicator_title">Location privacy indicator</string>
+    <string name="location_privacy_indicator_summary">Show indicator when any app uses location</string>
+    <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
+    <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
 </resources>
