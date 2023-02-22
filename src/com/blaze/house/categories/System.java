@@ -21,6 +21,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.os.UserHandle;
+import android.provider.Settings;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
@@ -64,6 +66,14 @@ public class System extends SettingsPreferenceFragment implements
         mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
         mPhotosSpoof.setOnPreferenceChangeListener(this);
 
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.NAVBAR_INVERSE_LAYOUT, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putStringForUser(resolver,
+                Settings.Secure.NAVBAR_LAYOUT_VIEWS, "default", UserHandle.USER_CURRENT);
     }
 
     @Override

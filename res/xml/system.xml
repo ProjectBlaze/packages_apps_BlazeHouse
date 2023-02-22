@@ -84,6 +84,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/navigation_category">
+
+        <com.blaze.house.preferences.SecureSettingListPreference
+            android:key="navbar_layout_views"
+            android:title="@string/navbar_layout_title"
+            android:summary="%s"
+            android:entries="@array/navbar_layout_entries"
+            android:entryValues="@array/navbar_layout_values"
+            android:defaultValue="default" />
+
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="navbar_inverse_layout"
+            android:title="@string/navbar_invert_layout_title"
+            android:summary="@string/navbar_invert_layout_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/spoof_category">
 
         <!-- Unlock FPS for specific games -->

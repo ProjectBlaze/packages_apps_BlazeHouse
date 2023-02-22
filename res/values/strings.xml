@@ -57,6 +57,7 @@
     <string name="gestures_category">Gestures</string>
     <string name="volume_category">Volume Buttons</string>
     <string name="privacy_category">Privacy Indicators (Requires Restart)</string>
+    <string name="navigation_category">Navigation Buttons</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -374,4 +375,14 @@
     <string name="location_privacy_indicator_summary">Show indicator when any app uses location</string>
     <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
     <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
+
+    <!-- Navbar Layout -->
+    <string name="navbar_layout_category_title">Layout</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
 </resources>
