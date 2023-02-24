@@ -385,4 +385,8 @@
     <string name="navbar_layout_rightleaning">Right-leaning</string>
     <string name="navbar_invert_layout_title">Invert layout</string>
     <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
+
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
 </resources>
