@@ -61,6 +61,8 @@
         <item>@string/status_bar_battery_style_big_dotted_circle</item>
         <item>@string/status_bar_battery_style_text</item>
         <item>@string/status_bar_battery_style_hidden</item>
+        <item>@string/status_bar_battery_style_icon_rlandscape</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
     </string-array>
     <string-array name="status_bar_battery_style_values" translatable="false">
         <item>0</item>
@@ -71,6 +73,8 @@
         <item>7</item>
         <item>4</item>
         <item>5</item>
+        <item>8</item>
+        <item>9</item>
     </string-array>
     
     <!-- Clock position -->
