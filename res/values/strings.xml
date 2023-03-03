@@ -395,4 +395,10 @@
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
     <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_title">Navigation</string>
+    <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
 </resources>
