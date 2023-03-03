@@ -78,6 +78,10 @@ public class Buttons extends ActionFragment implements
 
     private SwitchPreference mNavigationBar;
 
+    private boolean mIsNavSwitchingMode = false;
+
+    private Handler mHandler;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -160,12 +164,19 @@ public class Buttons extends ActionFragment implements
                 Settings.System.FORCE_SHOW_NAVBAR,
                 defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
+
+	mHandler = new Handler();
+
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mHwKeyDisable) {
             boolean value = (Boolean) newValue;
+	    if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
             Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
@@ -173,6 +184,12 @@ public class Buttons extends ActionFragment implements
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
+	    mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
             return true;
         }
         return false;
