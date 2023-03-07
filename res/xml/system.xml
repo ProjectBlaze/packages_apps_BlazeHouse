@@ -43,12 +43,6 @@
     <PreferenceCategory
         android:title="@string/gestures_category">
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
-            android:key="three_finger_gesture"
-            android:title="@string/three_finger_gesture"
-            android:summary="@string/three_finger_gesture_summary"
-            android:defaultValue="false" />
-
         <com.blaze.house.preferences.SystemSettingListPreference
             android:key="torch_power_button_gesture"
             android:dialogTitle="@string/torch_power_button_gesture_title"
