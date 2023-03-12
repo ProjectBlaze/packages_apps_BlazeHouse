@@ -394,6 +394,9 @@
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+
+    <!-- Frame rate recorder -->
+    <string name="frame_rate_recorder_title">Frame rate in Screen Record</string>
 </resources>
 
 

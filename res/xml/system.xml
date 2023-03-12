@@ -105,6 +105,14 @@
             android:summary="@string/laboratory_ignore_window_secure_summary"
             android:defaultValue="false"/>
 
+        <!-- Screen Recorder -->       
+    	<com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="frame_rate_recorder"
+            android:title="@string/frame_rate_recorder_title"
+            android:min="0"
+            android:max="120"
+            android:defaultValue="60" />
+
 	<com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:order="24"
