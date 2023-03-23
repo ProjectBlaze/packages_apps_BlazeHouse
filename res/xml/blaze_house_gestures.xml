@@ -27,6 +27,12 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
         
+    <Preference
+        android:key="dtts_gesture_summary"
+        android:title="@string/dtts_gesture_title"
+        android:summary="@string/dtts_gesture_summary"
+        android:fragment="com.blaze.house.fragments.DoubleTapSleepSettings" />
+        
     </PreferenceCategory>
 
 </PreferenceScreen>

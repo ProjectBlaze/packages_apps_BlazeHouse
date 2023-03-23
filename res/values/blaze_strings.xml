@@ -86,4 +86,10 @@
     <string name="statusbar_icons">Icons</string>
     <string name="statusbar_tuner_title">Statusbar tuner</string>
     <string name="statusbar_items_summary">Tune Statusbar items</string>
+    
+    <!-- Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">Statusbar</string>
+    <string name="double_tap_to_sleep_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
+    <string name="dtts_gesture_title">Double tap to sleep gesture</string>
+    <string name="dtts_gesture_summary">Double tap on statusbar to sleep </string>
 </resources>
