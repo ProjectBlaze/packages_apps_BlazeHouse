@@ -113,6 +113,12 @@
             android:summary="@string/laboratory_ignore_window_secure_summary"
             android:defaultValue="false"/>
 
+        <com.blaze.house.preferences.GlobalSettingSwitchPreference
+            android:key="pie_animation_style"
+            android:title="@string/pie_animation_style_title"
+            android:summary="@string/pie_animation_style_summary"
+            android:defaultValue="false" />
+
 	<com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:order="24"
