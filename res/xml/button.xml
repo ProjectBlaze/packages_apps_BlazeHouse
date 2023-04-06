@@ -44,16 +44,25 @@
             android:summary="@string/navigation_bar_summary" />
 
     <PreferenceCategory 
-        android:key="hardware_keys"
-	    android:title="@string/hardware_keys_category">
+            android:key="hardware_keys"
+	    android:title="@string/hardware_keys_category_title">
+ 
+    <SwitchPreference
+	    android:key="hardware_keys_disable"
+	    android:title="@string/hardware_keys_disable_title"
+	    android:summary="@string/hardware_keys_disable_summary" />
 
-	    <SwitchPreference android:key="hardware_keys_disable"
-		    android:title="@string/hardware_keys_disable_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="back_key"
-        android:title="@string/hardware_keys_back_key_title" >
+            android:key="back_key"
+            android:title="@string/hardware_keys_back_key_title" >
+
+	<com.blaze.house.preferences.ActionPreference
+	    android:key="hwkeys_button_back_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.blaze.house.preferences.ActionPreference>
 
         <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_back_long_press"
@@ -70,8 +79,14 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="home_key"
-        android:title="@string/hardware_keys_home_key_title" >
+            android:key="home_key"
+            android:title="@string/hardware_keys_home_key_title" >
+
+	<com.blaze.house.preferences.ActionPreference
+            android:key="hwkeys_button_home_single_tap"
+            android:summary="@string/hardware_keys_single_tap_summary"
+            android:title="@string/hardware_keys_single_tap_title" >
+        </com.blaze.house.preferences.ActionPreference>
 
         <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_home_long_press"
@@ -88,8 +103,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="app_switch_key"
-        android:title="@string/hardware_keys_appswitch_key_title" >        
+            android:key="app_switch_key"
+            android:title="@string/hardware_keys_appswitch_key_title" >        
 
         <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_overview_single_tap"
@@ -112,8 +127,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="menu_key"
-        android:title="@string/hardware_keys_menu_key_title" >        
+            android:key="menu_key"
+            android:title="@string/hardware_keys_menu_key_title" >        
 
         <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_menu_single_tap"
@@ -136,8 +151,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="assist_key"
-        android:title="@string/hardware_keys_assist_key_title" >
+            android:key="assist_key"
+            android:title="@string/hardware_keys_assist_key_title" >
 
         <com.blaze.house.preferences.ActionPreference
             android:key="hwkeys_button_assist_single_tap"
