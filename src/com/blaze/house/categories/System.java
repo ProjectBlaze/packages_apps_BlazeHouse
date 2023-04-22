@@ -20,15 +20,11 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.provider.Settings;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -40,15 +36,6 @@ public class System extends SettingsPreferenceFragment implements
 
     private static final String TAG = "System";
 
-    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
-    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
-
-    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
-    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-
-    private SwitchPreference mGamesSpoof;
-    private SwitchPreference mPhotosSpoof;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,24 +43,6 @@ public class System extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        mGamesSpoof = (SwitchPreference) prefScreen.findPreference(KEY_GAMES_SPOOF);
-        mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
-        mGamesSpoof.setOnPreferenceChangeListener(this);
-
-        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
-        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
-        mPhotosSpoof.setOnPreferenceChangeListener(this);
-
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.NAVBAR_INVERSE_LAYOUT, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putStringForUser(resolver,
-                Settings.Secure.NAVBAR_LAYOUT_VIEWS, "default", UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -93,15 +62,6 @@ public class System extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mGamesSpoof) {
-            boolean value = (Boolean) objValue;
-            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
-            return true;
-        } else if (preference == mPhotosSpoof) {
-            boolean value = (Boolean) objValue;
-            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
-            return true;
-        }
         return true;
     }
 }

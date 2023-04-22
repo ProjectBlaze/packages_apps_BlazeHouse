@@ -27,8 +27,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.blaze.BlazeUtils;
-import com.blaze.house.preferences.SystemSettingListPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -36,9 +34,6 @@ public class Themes extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "Themes";
-    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
-    
-    private SystemSettingListPreference mSettingsDashBoardStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,10 +42,9 @@ public class Themes extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.themes);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        
-        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
-        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+
     }
+
 
     @Override
     public int getMetricsCategory() {
@@ -69,11 +63,6 @@ public class Themes extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        ContentResolver resolver = getActivity().getContentResolver();
-	if (preference == mSettingsDashBoardStyle){
-            BlazeUtils.showSettingsRestartDialog(getContext());
-            return true;
-            }
-        return false;
+        return true;
     }
 }

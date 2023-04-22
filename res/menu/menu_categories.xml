@@ -31,10 +31,4 @@
             android:icon="@drawable/ic_system_category"
             android:title="@string/system_category" 
             app:exb_color="@color/bottombar_active" />
-
-    <item
-            android:id="@+id/buttons_category"
-            android:icon="@drawable/ic_buttons_category"
-            android:title="@string/buttons_category" 
-            app:exb_color="@color/bottombar_active" />
 </menu>

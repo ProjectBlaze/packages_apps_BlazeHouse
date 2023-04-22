@@ -58,7 +58,6 @@ import com.blaze.house.categories.NotificationsPanel;
 import com.blaze.house.categories.StatusBar;
 import com.blaze.house.categories.System;
 import com.blaze.house.categories.Themes;
-import com.blaze.house.categories.Buttons;
 
 import com.blaze.house.navigation.BubbleNavigationConstraintView;
 import com.blaze.house.navigation.BubbleNavigationChangeListener;
@@ -92,8 +91,6 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
                 } else if (view.getId() == R.id.system_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.themes_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.buttons_category) {
                     viewPager.setCurrentItem(position, true);
                 }
             }
@@ -131,7 +128,6 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
 	    frags[2] = new NotificationsPanel();
             frags[3] = new Lockscreen();
             frags[4] = new System();
-            frags[5] = new Buttons();
         }
 
         @Override
@@ -153,12 +149,11 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-	        getString(R.string.themes_category),
+	    getString(R.string.themes_category),
             getString(R.string.status_bar_category),
-	        getString(R.string.notifications_panel_category),
+	    getString(R.string.notifications_panel_category),
             getString(R.string.lockscreen_category),
-            getString(R.string.system_category),
-            getString(R.string.buttons_category)};
+            getString(R.string.system_category)};
 
         return titleString;
     }
@@ -256,3 +251,4 @@ public class BlazeHouse extends SettingsPreferenceFragment implements
         }
     }
 }
+
