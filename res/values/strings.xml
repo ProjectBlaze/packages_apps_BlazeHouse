@@ -85,4 +85,9 @@
     <string name="network_options_title">Options</string>
     <string name="network_traffic_autohide_title">Hide network traffic indicator if inactive</string>
     <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1 KB/s</string>
+
+    <!-- Statusbar Items -->
+    <string name="statusbar_icons">Icons</string>
+    <string name="statusbar_items_title">Statusbar items</string>
+    <string name="statusbar_items_summary">Tune Statusbar items</string>
 </resources>
