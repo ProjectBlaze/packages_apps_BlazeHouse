@@ -17,5 +17,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        
+       <PreferenceCategory
+         android:title="@string/volume_button_category" >
+             
+             <com.blaze.house.preferences.SystemSettingSwitchPreference
+                  android:key="volbtn_music_controls"
+                  android:title="@string/volume_button_music_control_title"
+                  android:summary="@string/volume_button_music_control_summary"
+                  android:defaultValue="false" />
+       </PreferenceCategory>
 
 </PreferenceScreen>
