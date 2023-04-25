@@ -185,4 +185,8 @@
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
+
+    <!-- DT2S on lockscreen-->
+    <string name="double_tap_sleep_lockscreen_title">Lockscreen</string>
+    <string name="double_tap_sleep_lockscreen_summary">Double-tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>
