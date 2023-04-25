@@ -50,6 +50,7 @@
     <string name="network_category">Network Options</string>
     <string name="qs_category">QS Panel</string>
     <string name="notifications_category">Notifications</string>
+    <string name="navigation_category">Navigation Buttons</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -112,4 +113,14 @@
     <string name="statusbar_icons">Icons</string>
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_items_summary">Tune Statusbar items</string>
+
+    <!-- Navbar Layout -->
+    <string name="navbar_layout_category_title">Layout</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
 </resources>
