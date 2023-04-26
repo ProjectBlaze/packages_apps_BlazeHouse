@@ -59,6 +59,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
         super.onResume();
 	if (DateFormat.is24HourFormat(requireContext())) {
             mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_unavailable);
             }
     }
 
