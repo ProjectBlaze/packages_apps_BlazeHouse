@@ -25,12 +25,17 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
+import android.text.format.DateFormat;
+import com.blaze.house.preferences.SecureSettingListPreference;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "StatusBar";
+
+    private static final String KEY_STATUS_BAR_AM_PM = "status_bar_am_pm";
+    private SecureSettingListPreference mStatusBarAmPm;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.status_bar);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+	mStatusBarAmPm = findPreference(KEY_STATUS_BAR_AM_PM);
 
     }
 
@@ -50,6 +57,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+	if (DateFormat.is24HourFormat(requireContext())) {
+            mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_unavailable);
+            }
     }
 
     @Override
