@@ -33,6 +33,12 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
+	<Preference
+            android:key="battery_settings"
+            android:title="@string/battery_style_category_title"
+            android:summary="@string/battery_style_category_summary"
+            android:fragment="com.blaze.house.fragments.StatusBarBattery" />
+
     </PreferenceCategory>
 
 	<PreferenceCategory
