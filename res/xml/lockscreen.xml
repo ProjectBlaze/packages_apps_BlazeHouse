@@ -41,6 +41,12 @@
         android:defaultValue="false" />
 
     </PreferenceCategory>
+
+    <Preference
+        android:key="pulse_settings"
+        android:fragment="com.blaze.house.fragments.PulseSettings"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary" />
     
     <!-- Udfps options -->
     <PreferenceCategory
