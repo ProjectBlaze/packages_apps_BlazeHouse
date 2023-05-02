@@ -303,4 +303,8 @@
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
     <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast app icon</string>
+    <string name="toast_icon_summary">Display the app\'s icon corresponding with the toast</string>
 </resources>
