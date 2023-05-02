@@ -52,6 +52,7 @@
     <string name="qs_category">QS Panel</string>
     <string name="notifications_category">Notifications</string>
     <string name="navigation_category">Navigation Buttons</string>
+    <string name="reticker_category">Reticker</string>
     
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -286,4 +287,10 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted сircle</string>
     <string name="status_bar_battery_style_text">Text</string>
+
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Replace heads-up notification with slim and less invasive version of redesigned ticker</string>
+    <string name="reticker_colored_title">Use app colored background</string>
+    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
 </resources>
