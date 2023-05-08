@@ -56,6 +56,9 @@
     <string name="volbtn_category">Volume Keys</string>
     <string name="development_category">Development Options</string>    
     <string name="privacy_category">Privacy Indicators (Requires Restart)</string>
+    <string name="pulse_category">Music Pulse</string>
+    <string name="screenoff_category">Lockscreen Animations</string>
+    <string name="d2ts_category">Double tap to sleep</string>
 
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>

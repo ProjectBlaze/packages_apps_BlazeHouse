@@ -35,12 +35,26 @@
         android:defaultValue="true" />
 
     <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wake_on_plug_title"
+        android:summary="@string/wake_on_plug_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/d2ts_category">
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen_title"
         android:summary="@string/double_tap_sleep_lockscreen_summary"
         android:defaultValue="false" />
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+	android:title="@string/screenoff_category">
 
     <com.blaze.house.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
@@ -50,11 +64,7 @@
         android:summary="%s"
         android:defaultValue="0" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wake_on_plug_title"
-        android:summary="@string/wake_on_plug_summary"
-        android:defaultValue="true" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="lockscreen_media_art_options"
@@ -65,6 +75,11 @@
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
             android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:title="@string/pulse_category">
 
     <Preference
         android:key="pulse_settings"
