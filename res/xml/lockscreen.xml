@@ -50,6 +50,12 @@
         android:summary="%s"
         android:defaultValue="0" />
 
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wake_on_plug_title"
+        android:summary="@string/wake_on_plug_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title">
