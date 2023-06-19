@@ -90,7 +90,7 @@
             app:extensions_icon="@drawable/ic_system_category"
             app:extensions_shape="@drawable/navigation_transition_background_drawable_system"
             app:extensions_title="@string/system_category" />
-
+            
     </com.blaze.house.navigation.BubbleNavigationConstraintView>
 
     <androidx.viewpager.widget.ViewPager
