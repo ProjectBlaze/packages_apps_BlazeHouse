@@ -228,7 +228,7 @@
     <string name="pulse_solid_units_rounded_title">Solid lines rounded</string>
     <string name="pulse_solid_units_rounded_summary">Round the solid lines</string>
 	
-	<!-- Pulse Gravity and mirror options -->
+    <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">Gravity</string>
     <string name="pulse_custom_gravity_bottom">Bottom</string>
     <string name="pulse_custom_gravity_top">Top</string>
@@ -237,8 +237,14 @@
     <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
 	<string name="pulse_vertical_mirror_title">Vertical Mirror</string>
     <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
-	
-	 <!-- Fingerprint Ripple Effect --> 
+
+    <!-- Fingerprint Ripple Effect --> 
     <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
     <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Replace heads-up notification with slim and less invasive version of redesigned ticker</string>
+    <string name="reticker_colored_title">Use app colored background</string>
+    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
 </resources>
