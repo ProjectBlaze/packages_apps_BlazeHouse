@@ -31,6 +31,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/qs_category">
+
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/general_category">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
