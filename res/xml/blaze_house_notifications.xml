@@ -18,5 +18,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    
+    <PreferenceCategory
+        android:title="@string/general_category">
+        
+            <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -105,4 +105,8 @@
     <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response), Disables double power tap for camera.</string>
     <string name="torch_power_button_gesture_lp">Long press power button</string>
     
+    <!-- Heads up options -->
+    <string name="notifications_category_title">Annoying notifications protection</string>
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
 </resources>
