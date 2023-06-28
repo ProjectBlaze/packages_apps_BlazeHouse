@@ -38,6 +38,13 @@
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
         android:fragment="com.blaze.house.fragments.NetworkTrafficSettings" />
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="statusbar_colored_icons"
+        android:title="@string/statusbar_colored_icons_title"
+        android:summary="@string/statusbar_colored_icons_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
