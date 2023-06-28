@@ -58,7 +58,7 @@
             android:order="9"
             android:defaultValue="false" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:dependency="reticker_status"
             android:key="reticker_colored"
             android:title="@string/reticker_colored_title"
@@ -66,6 +66,12 @@
             android:order="10"
             android:defaultValue="false" />
 			
+	<com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="secure_lockscreen_qs_disabled"
+            android:title="@string/disable_qs_title"
+            android:summary="@string/disable_qs_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
