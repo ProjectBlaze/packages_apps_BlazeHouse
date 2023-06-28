@@ -69,14 +69,21 @@
             android:summary="@string/global_actions_advanced_reboot_summary"
             android:defaultValue="false" />
 			
-		 <com.blaze.house.preferences.SystemSettingListPreference
-			android:key="torch_power_button_gesture"
-			android:dialogTitle="@string/torch_power_button_gesture_title"
-			android:title="@string/torch_power_button_gesture_title"
-			android:summary="%s"
-			android:entries="@array/torch_power_button_gesture_entries"
-			android:entryValues="@array/torch_power_button_gesture_values"
-			android:defaultValue="0" />
+	<com.blaze.house.preferences.SystemSettingListPreference
+	    android:key="torch_power_button_gesture"
+	    android:dialogTitle="@string/torch_power_button_gesture_title"
+	    android:title="@string/torch_power_button_gesture_title"
+	    android:summary="%s"
+	    android:entries="@array/torch_power_button_gesture_entries"
+	    android:entryValues="@array/torch_power_button_gesture_values"
+	    android:defaultValue="0" />
+
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+           android:key="toast_icon"
+           android:order="24"
+           android:title="@string/toast_icon_title"
+           android:summary="@string/toast_icon_summary"
+           android:defaultValue="true"/>
 
     </PreferenceCategory>
 
