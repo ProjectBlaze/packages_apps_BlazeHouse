@@ -60,6 +60,7 @@
     <string name="screenoff_category">Lockscreen Animations</string>
     <string name="d2ts_category">Double tap to sleep</string>
     <string name="headsup_category">Heads up</string>
+    <string name="spoofing_category">Spoofing</string>
 
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
@@ -297,4 +298,8 @@
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_title">Clock AM/PM style</string>
     <string name="status_bar_am_pm_unavailable">24-hour clock is enabled</string>
+
+    <!-- GamesPropsUtils -->
+    <string name="games_device_spoof_title">Unlock higher FPS in games</string>
+    <string name="games_device_spoof_summary">Spoof device as a high-end model in certain games, to unlock higher FPS</string>
 </resources>
