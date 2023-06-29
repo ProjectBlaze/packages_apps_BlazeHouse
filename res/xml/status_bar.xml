@@ -39,12 +39,6 @@
         android:summary="@string/network_traffic_summary"
         android:fragment="com.blaze.house.fragments.NetworkTrafficSettings" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="statusbar_colored_icons"
-        android:title="@string/statusbar_colored_icons_title"
-        android:summary="@string/statusbar_colored_icons_summary"
-        android:defaultValue="false" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -60,25 +54,36 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/statusbar_colored_icons_title"
+            android:summary="@string/statusbar_colored_icons_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="show_fourg_icon"
-        android:title="@string/show_fourg_icon_title"
-        android:summary="@string/show_fourg_icon_summary"
-        android:defaultValue="false"/>
+    <PreferenceCategory
+        android:title="@string/network_category">
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="roaming_indicator_icon"
-        android:title="@string/roaming_indicator_icon_title"
-        android:summary="@string/roaming_indicator_icon_summary"
-        android:defaultValue="true"/>
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="show_fourg_icon"
+            android:title="@string/show_fourg_icon_title"
+            android:summary="@string/show_fourg_icon_summary"
+            android:defaultValue="false"/>
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="data_disabled_icon"
-        android:title="@string/data_disabled_icon_title"
-        android:summary="@string/data_disabled_icon_summary"
-        android:defaultValue="true"/>
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="roaming_indicator_icon"
+            android:title="@string/roaming_indicator_icon_title"
+            android:summary="@string/roaming_indicator_icon_summary"
+            android:defaultValue="true"/>
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="data_disabled_icon"
+            android:title="@string/data_disabled_icon_title"
+            android:summary="@string/data_disabled_icon_summary"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/privacy_category">

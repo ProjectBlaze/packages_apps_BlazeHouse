@@ -40,30 +40,29 @@
 
     </PreferenceCategory>
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="volbtn_music_controls"
-        android:title="@string/volume_button_music_control_title"
-	android:dependency="volume_rocker_wake"
-        android:summary="@string/volume_button_music_control_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/volbtn_category" >
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:title="@string/volume_rocker_wake_title"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="volbtn_music_controls"
+            android:title="@string/volume_button_music_control_title"
+	    android:dependency="volume_rocker_wake"
+            android:summary="@string/volume_button_music_control_summary"
+            android:defaultValue="false" />
 
-    <com.blaze.house.preferences.SecureSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/laboratory_ignore_window_secure_title"
-        android:summary="@string/laboratory_ignore_window_secure_summary"
-        android:defaultValue="false"/>
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:title="@string/volume_rocker_wake_title"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/general_category">
 
-         <com.blaze.house.preferences.SecureSettingSwitchPreference
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/global_actions_advanced_reboot_title"
             android:summary="@string/global_actions_advanced_reboot_summary"
@@ -78,12 +77,23 @@
 	    android:entryValues="@array/torch_power_button_gesture_values"
 	    android:defaultValue="0" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/development_category" >
+
+	<com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/laboratory_ignore_window_secure_title"
+            android:summary="@string/laboratory_ignore_window_secure_summary"
+            android:defaultValue="false"/>
+
 	<com.blaze.house.preferences.SystemSettingSwitchPreference
-           android:key="toast_icon"
-           android:order="24"
-           android:title="@string/toast_icon_title"
-           android:summary="@string/toast_icon_summary"
-           android:defaultValue="true"/>
+            android:key="toast_icon"
+            android:order="24"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true"/>
 
     </PreferenceCategory>
 

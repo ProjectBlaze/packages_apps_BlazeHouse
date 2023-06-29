@@ -59,6 +59,7 @@
     <string name="pulse_category">Music Pulse</string>
     <string name="screenoff_category">Lockscreen Animations</string>
     <string name="d2ts_category">Double tap to sleep</string>
+    <string name="headsup_category">Heads up</string>
 
     <!-- App info dialog -->
     <string name="blazehouse_dialog_title">Help us help you!</string>
