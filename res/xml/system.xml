@@ -77,6 +77,13 @@
 	    android:entryValues="@array/torch_power_button_gesture_values"
 	    android:defaultValue="0" />
 
+    <!-- Smart Pixels -->
+        <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title" 
+            android:summary="@string/smart_pixels_summary" 
+            android:fragment="com.blaze.house.categories.SmartPixels" />
+
     <!-- Parallel Space -->
     <Preference
         android:key="parallel_space"
