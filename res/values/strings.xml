@@ -184,18 +184,18 @@
     <string name="double_tap_to_sleep_lockscreen_title">Lockscreen</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Double-tap anywhere on the lockscreen to put the device to sleep</string>
 	
-	<!-- Torch Power button gestures -->
+    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
     <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response), Disables double power tap for camera.</string>
     <string name="torch_power_button_gesture_lp">Long press power button</string>
 	
-	<!-- Media art -->
+    <!-- Media art -->
     <string name="lockscreen_media_art_options_title">Media cover art</string>
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Display media cover art when available</string>
 	
-	<!-- Pulse music visualizer -->
+    <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">About Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio visualizer when music plays on the device</string>
     <string name="pulse_settings">Pulse</string>
@@ -220,7 +220,7 @@
     <string name="pulse_color_custom">Custom</string>
     <string name="pulse_color_lava_lamp">Lava lamp</string>
     <string name="pulse_color_user_title">Choose color</string>
-	<string name="pulse_color_auto">Album</string>
+    <string name="pulse_color_auto">Album</string>
     <string name="pulse_smoothing_enabled_title">Turn on smoothing</string>
     <string name="pulse_smoothing_enabled_summary">Each bar is animated more smoothly</string>
     <string name="pulse_custom_dimen">Bar width</string>
@@ -237,7 +237,7 @@
     <string name="pulse_custom_gravity_center">Center</string>
     <string name="visualizer_center_mirrored_title">Center mirrored</string>
     <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
-	<string name="pulse_vertical_mirror_title">Vertical Mirror</string>
+    <string name="pulse_vertical_mirror_title">Vertical Mirror</string>
     <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
 
     <!-- Fingerprint Ripple Effect --> 
@@ -402,5 +402,3 @@
     <string name="power_menu_transparency">Power/reboot menu opacity</string>
     <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>
 </resources>
-
-

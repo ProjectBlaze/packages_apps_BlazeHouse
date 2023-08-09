@@ -77,23 +77,31 @@
 	    android:entryValues="@array/torch_power_button_gesture_values"
 	    android:defaultValue="0" />
 
-    <!-- Smart Pixels -->
+        <!-- Smart Pixels -->
         <Preference
             android:key="smart_pixels"
             android:title="@string/smart_pixels_title" 
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.blaze.house.categories.SmartPixels" />
 
-    <!-- Parallel Space -->
-    <Preference
-        android:key="parallel_space"
-        android:title="@string/laboratory_parallel_space_title"
-        android:summary="@string/laboratory_parallel_space_summary">
-        <intent
+        <!-- Parallel Space -->
+        <Preference
+            android:key="parallel_space"
+            android:title="@string/laboratory_parallel_space_title"
+            android:summary="@string/laboratory_parallel_space_summary">
+            <intent
             android:targetPackage="ink.kscope.parallelspace"
             android:targetClass="ink.kscope.parallelspace.MainActivity" />
-    </Preference>
+        </Preference>
     
+	<!-- Screen Recorder -->
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+            android:key="frame_rate_recorder"
+            android:title="@string/frame_rate_recorder_title"
+            android:min="0"
+            android:max="120"
+            android:defaultValue="60" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -104,14 +112,6 @@
             android:title="@string/laboratory_ignore_window_secure_title"
             android:summary="@string/laboratory_ignore_window_secure_summary"
             android:defaultValue="false"/>
-
-        <!-- Screen Recorder -->       
-    	<com.blaze.house.preferences.SystemSettingSeekBarPreference
-            android:key="frame_rate_recorder"
-            android:title="@string/frame_rate_recorder_title"
-            android:min="0"
-            android:max="120"
-            android:defaultValue="60" />
 
 	<com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
@@ -155,16 +155,16 @@
 
 
     <PreferenceCategory
-        android:title="powermenu layout">
+        android:title="Powermenu Layout">
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
             android:key="transparent_power_menu"
             android:title="@string/power_menu_transparency"
             android:max="100"
             android:min="0"
             android:defaultValue="100" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.blaze.house.preferences.SystemSettingSeekBarPreference
             android:key="transparent_power_dialog_dim"
             android:title="@string/power_menu_dialog_dim"
             android:max="100"
@@ -172,4 +172,5 @@
             android:defaultValue="50" />
 
     </PreferenceCategory>
+
 </PreferenceScreen>
