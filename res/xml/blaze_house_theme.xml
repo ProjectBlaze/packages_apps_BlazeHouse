@@ -40,6 +40,13 @@
             android:title="@string/theme_customization_signal_icon_title"
             android:summary="@string/theme_customization_signal_icon_summary"
             android:fragment="com.blaze.house.fragments.SignalIcons"/>
+            
+        <!-- Data icon style -->  
+        <Preference
+            android:key="android.theme.customization.sb_data"
+            android:title="@string/theme_customization_data_title"
+            android:summary="@string/theme_customization_data_summary"
+            android:fragment="com.blaze.house.fragments.DataStyles" />
 
         <Preference
             android:key="android.theme.customization.wifi_icon"

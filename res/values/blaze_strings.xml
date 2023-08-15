@@ -69,6 +69,8 @@
     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Device default</string>
+    <string name="theme_customization_data_title">Data icon style</string>
+    <string name="theme_customization_data_summary">Set custom data icon style</string>
 
     <!-- Ignore window secure -->
     <string name="laboratory_ignore_window_secure_title">Ignore window secure flags</string>
