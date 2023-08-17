@@ -12,10 +12,14 @@
  * permissions and limitations under the License.
  */
 
-package com.blaze.house.fragments;
+package com.blaze.house;
 
+import android.database.ContentObserver;
+import android.content.ContentResolver;
+import android.net.Uri;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.View;
@@ -30,12 +34,15 @@ import com.android.internal.util.systemui.qs.QSLayoutUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.internal.util.blaze.ThemeUtils;
+
 import com.android.settingslib.widget.LayoutPreference;
 
-import com.blaze.house.preferences.SystemSettingSeekBarPreference;
+import com.blaze.house.preferences.CustomSeekBarPreference;
 import com.blaze.house.preferences.SystemSettingSwitchPreference;
+import com.blaze.house.preferences.SystemSettingListPreference;
 
-public class QsLayoutSettings extends SettingsPreferenceFragment
+public class QsTileLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_QS_HIDE_LABEL = "qs_tile_label_hide";
@@ -44,12 +51,17 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
     private static final String KEY_QQS_ROW_PORTRAIT = "qqs_layout_rows";
     private static final String KEY_APPLY_CHANGE_BUTTON = "apply_change_button";
+    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
+    private static final String overlayThemeTarget  = "com.android.systemui";
 
     private Context mContext;
 
-    private SystemSettingSeekBarPreference mQsColumns;
-    private SystemSettingSeekBarPreference mQsRows;
-    private SystemSettingSeekBarPreference mQqsRows;
+    private CustomSeekBarPreference mQsColumns;
+    private CustomSeekBarPreference mQsRows;
+    private CustomSeekBarPreference mQqsRows;
+    private SystemSettingListPreference mQsUI;
+    private Handler mHandler;
+    private ThemeUtils mThemeUtils;
 
     private Button mApplyChange;
 
@@ -61,20 +73,25 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        addPreferencesFromResource(R.xml.notificationspanel);
+        addPreferencesFromResource(R.xml.qs_tile_layout);
+        
+        mThemeUtils = new ThemeUtils(getActivity());
+
+        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
+        mCustomSettingsObserver.observe();
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mQsColumns = (SystemSettingSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
+        mQsColumns = (CustomSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
         mQsColumns.setOnPreferenceChangeListener(this);
 
-        mQsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
+        mQsRows = (CustomSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
         mQsRows.setOnPreferenceChangeListener(this);
 
-        mQqsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
+        mQqsRows = (CustomSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
         mQqsRows.setOnPreferenceChangeListener(this);
 
         mContext = getContext();
@@ -147,6 +164,8 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
                 currentValue[0] != mQsRows.getValue() * 10 + mQsColumns.getValue() ||
                 currentValue[1] != qqs_rows * 10 + mQsColumns.getValue()
             );
+        } else if (preference == mQsUI) {
+            mCustomSettingsObserver.observe();
         }
         return true;
     }
@@ -154,6 +173,53 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.BLAZE_HOUSE;
+    }
+    
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_UI_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
+                updateQsStyle();
+            }
+        }
+    }
+
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+
+	String qsUIStyleCategory = "android.theme.customization.qs_ui";
+
+	/// reset all overlays before applying
+	resetQsOverlays(qsUIStyleCategory);
+
+	if (isA11Style) {
+	    setQsStyle("com.android.system.qs.ui.A11", qsUIStyleCategory);
+	}
+    }
+
+    public void resetQsOverlays(String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayThemeTarget);
+    }
+
+    public void setQsStyle(String overlayName, String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayName);
     }
 
     private void initPreference() {

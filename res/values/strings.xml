@@ -394,6 +394,7 @@
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    <string name="qs_panel_title">QS Panel</string>
     <string name="qs_ui_title">Quick Settings UI</string>
     <string name="android_eleven">Android 11</string>
 
@@ -413,9 +414,9 @@
     <string name="theme_customization_lock_clock_summary">Set LS clock font style</string>
 
     <!-- QS tiles layout -->
-    <string name="qs_layout_category_title">QuickSettings</string>
+    <string name="qs_layout_category_title">Quick Settings layout</string>
     <string name="qs_tile_layout_title">QS tiles layout</string>
-    <string name="qs_tile_layout_summary">Customize QuickSettings panel</string>
+    <string name="qs_tile_layout_summary">Customize tiles layout in QS panel</string>
     <string name="qs_tiles_layout_category">Tiles layout</string>
     <string name="qs_rows_portrait_title">Rows (Portrait)</string>
     <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
