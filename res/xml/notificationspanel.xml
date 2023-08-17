@@ -75,6 +75,15 @@
     <PreferenceCategory
         android:title="@string/qs_category">
 
+	<!-- QS UI -->
+        <com.blaze.house.preferences.SystemSettingListPreference
+            android:key="qs_ui_style"
+            android:title="@string/qs_ui_title"
+            android:entries="@array/qs_ui_entries"
+            android:entryValues="@array/qs_ui_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
 	<com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
