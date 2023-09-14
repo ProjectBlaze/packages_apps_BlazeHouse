@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2023 ProjectBlaze
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/blazehouse_title" >
+
+        <!-- Theme Room -->
+        <Preference
+            android:key="theme_category"
+            android:title="@string/theme_title"
+            android:fragment="com.blaze.house.categories.ThemeSettings"
+            android:icon="@drawable/ic_settings_theme"/>
+        
+        <!-- Status Bar -->
+        <Preference
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:fragment="com.blaze.house.categories.StatusBarSettings" 
+            android:icon="@drawable/ic_settings_statusbar"/>
+
+        <!-- Quick Settings panel -->
+        <Preference
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.blaze.house.categories.QuickSettings"
+            android:icon="@drawable/ic_settings_quicksettings"/>
+
+        <!-- Buttons -->
+        <Preference
+            android:key="buttonsettings_category"
+            android:title="@string/button_title"
+            android:fragment="com.blaze.house.categories.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>
+
+        <!-- Gestures -->
+        <Preference
+            android:key="gestures_category"
+            android:title="@string/gestures_title" 
+            android:fragment="com.blaze.house.categories.GestureSettings"
+            android:icon="@drawable/ic_settings_gestures"/>
+
+        <!-- Lock Screen -->
+        <Preference
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title" 
+            android:fragment="com.blaze.house.categories.LockScreenSettings"
+            android:icon="@drawable/ic_settings_lockscreens"/>
+
+        <!-- Notifications -->
+        <Preference
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="com.blaze.house.categories.NotificationSettings"
+            android:icon="@drawable/ic_settings_notifications"/>
+
+        <!-- system -->
+        <Preference
+            android:key="system_category"
+            android:title="@string/system_title" 
+            android:fragment="com.blaze.house.categories.SystemSettings"
+            android:icon="@drawable/ic_settings_system"/>
+        
+        <!-- Misc -->
+        <Preference
+            android:key="misc_category"
+            android:title="@string/misc_title" 
+            android:fragment="com.blaze.house.categories.MiscSettings"
+            android:icon="@drawable/ic_settings_miscs"/>
+
+</PreferenceScreen>
