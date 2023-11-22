@@ -50,6 +50,7 @@
     <string name="general_category">General</string>
     <string name="network_category">Network Options</string>
     <string name="media_category">Media</string>
+    <string name="fingerprint_category">Fingerprint</string>
 
     <!-- Ignore window secure -->
     <string name="laboratory_ignore_window_secure_title">Ignore window secure flags</string>
@@ -114,4 +115,8 @@
     <!-- Settings Greetings -->
     <string name="settings_contextual_message_title">Settings contextual messages</string>
     <string name="settings_contextual_message_summary">Enable settings homepage messages that changes base on current time of the day</string>
+    
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>

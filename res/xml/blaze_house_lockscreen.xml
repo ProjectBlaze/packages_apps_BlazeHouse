@@ -52,5 +52,17 @@
             settings:min="1" />
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="lockscreen_ui_finterprint_category"
+        android:title="@string/fingerprint_category">
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="enable_ripple_effect"
+        android:title="@string/enable_fingerprint_ripple_effect_title"
+        android:summary="@string/enable_fingerprint_ripple_effect_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
