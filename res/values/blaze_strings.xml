@@ -49,6 +49,7 @@
     <!-- Sub category -->
     <string name="general_category">General</string>
     <string name="network_category">Network Options</string>
+    <string name="media_category">Media</string>
 
     <!-- Ignore window secure -->
     <string name="laboratory_ignore_window_secure_title">Ignore window secure flags</string>
