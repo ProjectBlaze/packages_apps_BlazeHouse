@@ -4,41 +4,44 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.blaze.house.preferences.SecureSettingListPreference
+ <PreferenceCategory
+    android:title="@string/notifications_panel_category">
+    
+   <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_show_brightness_slider"
             android:title="@string/qs_brightness_slider_title"
             android:entries="@array/qs_brightness_slider_entries"
             android:entryValues="@array/qs_brightness_slider_values"
             android:defaultValue="1" />
 
-        <com.blaze.house.preferences.SecureSettingListPreference
+   <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:title="@string/qs_brightness_slider_position_title"
             android:entries="@array/qs_brightness_slider_position_entries"
             android:entryValues="@array/qs_brightness_slider_position_values"
             android:defaultValue="0" />
 
-        <com.blaze.house.preferences.SecureSettingSwitchPreference
+   <com.blaze.house.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
             android:title="@string/qs_auto_brightness_title"
             android:summary="@string/qs_auto_brightness_summary"
             android:defaultValue="true" />
 
-        <com.blaze.house.preferences.SecureSettingListPreference
+   <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_style_round"
             android:title="@string/qs_style_title"
             android:entries="@array/qs_style_entries"
             android:entryValues="@array/qs_style_values"
             android:defaultValue="1" />
 
-        <com.blaze.house.preferences.SecureSettingListPreference
+   <com.blaze.house.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
             android:entries="@array/qs_tile_shape_entries"
             android:entryValues="@array/qs_tile_shape_values"
             android:defaultValue="2" />
 
-        <com.blaze.house.preferences.SecureSettingSeekBarPreference
+   <com.blaze.house.preferences.SecureSettingSeekBarPreference
             android:key="qqs_num_columns"
             android:title="@string/qqs_columns"
             android:min="@string/qqs_columns_min"
@@ -47,7 +50,7 @@
             settings:textStart="@string/qqs_columns_min"
             settings:textEnd="@string/qqs_columns_max" />
 
-        <com.blaze.house.preferences.SecureSettingSeekBarPreference
+   <com.blaze.house.preferences.SecureSettingSeekBarPreference
             android:key="qqs_num_columns_landscape"
             android:title="@string/qqs_columns_landscape"
             android:min="@string/qqs_columns_landscape_min"
@@ -56,23 +59,23 @@
             settings:textStart="@string/qqs_columns_landscape_min"
             settings:textEnd="@string/qqs_columns_landscape_max" />
 
-        <com.blaze.house.preferences.SecureSettingSeekBarPreference
-            android:key="qs_num_columns"
-            android:title="@string/qs_columns"
-            android:min="@string/qs_columns_min"
-            android:max="@string/qs_columns_max"
-            android:defaultValue="4"
-            settings:textStart="@string/qs_columns_min"
-            settings:textEnd="@string/qs_columns_max" />
+   <com.blaze.house.preferences.SecureSettingSeekBarPreference
+          android:key="qs_num_columns"
+          android:title="@string/qs_columns"
+          android:min="@string/qs_columns_min"
+          android:max="@string/qs_columns_max"
+          android:defaultValue="4"
+          settings:textStart="@string/qs_columns_min"
+          settings:textEnd="@string/qs_columns_max" />
 
-        <com.blaze.house.preferences.SecureSettingSeekBarPreference
+   <com.blaze.house.preferences.SecureSettingSeekBarPreference
             android:key="qs_num_columns_landscape"
             android:title="@string/qs_columns_landscape"
             android:min="@string/qs_columns_landscape_min"
             android:max="@string/qs_columns_landscape_max"
             android:defaultValue="6"
             settings:textStart="@string/qs_columns_landscape_min"
-            settings:textEnd="@string/qs_columns_landscape_max" />
-
+            settings:textEnd="@string/qs_columns_landscape_max" />      
+   </PreferenceCategory>
 
 </PreferenceScreen>

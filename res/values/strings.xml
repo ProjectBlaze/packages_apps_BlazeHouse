@@ -83,6 +83,10 @@
     <string name="qs_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 
+    <!-- Brightness slider styles -->
+    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
+    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+
     <!-- QS style -->
     <string name="qs_style_title">QS Panel style</string>
     <string name="qs_style_default">Large pill</string>
@@ -101,10 +105,11 @@
     <string name="qqs_columns_landscape">QQS columns in landscape</string>
     <string name="qqs_columns_landscape_min" translatable="false">@string/qs_columns_landscape_min</string>
     <string name="qqs_columns_landscape_max" translatable="false">@string/qs_columns_landscape_max</string>
-    
+
     <!-- QS tile shape -->
     <string name="qs_tile_shape">QS tile shape</string>
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    
 </resources>
