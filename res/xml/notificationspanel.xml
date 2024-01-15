@@ -24,5 +24,12 @@
             android:summary="@string/qs_auto_brightness_summary"
             android:defaultValue="true" />
 
+        <com.blaze.house.preferences.SecureSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="2" />
+
 
 </PreferenceScreen>
