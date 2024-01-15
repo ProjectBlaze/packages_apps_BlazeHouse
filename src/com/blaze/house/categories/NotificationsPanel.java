@@ -28,6 +28,11 @@ import java.util.List;
 @SearchIndexable
 public class NotificationsPanel extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String TAG = "QSPanelSettings";
+    private static final String[] qsCustPreferences = { "qs_tile_shape",
+            "qqs_num_columns", "qqs_num_columns_landscape",
+            "qs_num_columns", "qs_num_columns_landscape" };
+
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
@@ -40,6 +45,20 @@ public class NotificationsPanel extends SettingsPreferenceFragment implements Pr
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.notificationspanel);
+
+        PreferenceScreen preferenceScreen = getPreferenceScreen();
+
+        boolean qsStyleRound = Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                Settings.Secure.QS_STYLE_ROUND, 1, UserHandle.USER_CURRENT) == 1;
+
+        if (!qsStyleRound) {
+            for (String key : qsCustPreferences) {
+                Preference preference = preferenceScreen.findPreference(key);
+                if (preference != null) {
+                    preference.setEnabled(false);
+                }
+            }
+        }
 
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
