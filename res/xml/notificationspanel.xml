@@ -76,6 +76,17 @@
             android:defaultValue="6"
             settings:textStart="@string/qs_columns_landscape_min"
             settings:textEnd="@string/qs_columns_landscape_max" />      
+   
+   <com.blaze.house.preferences.CustomSystemSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
    </PreferenceCategory>
 
 </PreferenceScreen>
