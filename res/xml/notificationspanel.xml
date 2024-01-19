@@ -8,85 +8,31 @@
     android:title="@string/notifications_panel_category">
     
    <com.blaze.house.preferences.SecureSettingListPreference
-            android:key="qs_show_brightness_slider"
-            android:title="@string/qs_brightness_slider_title"
-            android:entries="@array/qs_brightness_slider_entries"
-            android:entryValues="@array/qs_brightness_slider_values"
-            android:defaultValue="1" />
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title"
+        android:entries="@array/qs_brightness_slider_entries"
+        android:entryValues="@array/qs_brightness_slider_values"
+        android:defaultValue="1" />
 
    <com.blaze.house.preferences.SecureSettingListPreference
-            android:key="qs_brightness_slider_position"
-            android:title="@string/qs_brightness_slider_position_title"
-            android:entries="@array/qs_brightness_slider_position_entries"
-            android:entryValues="@array/qs_brightness_slider_position_values"
-            android:defaultValue="0" />
+        android:key="qs_brightness_slider_position"
+        android:title="@string/qs_brightness_slider_position_title"
+        android:entries="@array/qs_brightness_slider_position_entries"
+        android:entryValues="@array/qs_brightness_slider_position_values"
+        android:defaultValue="0" />
 
    <com.blaze.house.preferences.SecureSettingSwitchPreference
-            android:key="qs_show_auto_brightness"
-            android:title="@string/qs_auto_brightness_title"
-            android:summary="@string/qs_auto_brightness_summary"
-            android:defaultValue="true" />
+        android:key="qs_show_auto_brightness"
+        android:title="@string/qs_auto_brightness_title"
+        android:summary="@string/qs_auto_brightness_summary"
+        android:defaultValue="true" />
 
-   <com.blaze.house.preferences.SecureSettingListPreference
-            android:key="qs_style_round"
-            android:title="@string/qs_style_title"
-            android:entries="@array/qs_style_entries"
-            android:entryValues="@array/qs_style_values"
-            android:defaultValue="1" />
+ </PreferenceCategory>
 
-   <com.blaze.house.preferences.SecureSettingListPreference
-            android:key="qs_tile_shape"
-            android:title="@string/qs_tile_shape"
-            android:entries="@array/qs_tile_shape_entries"
-            android:entryValues="@array/qs_tile_shape_values"
-            android:defaultValue="2" />
-
-   <com.blaze.house.preferences.SecureSettingSeekBarPreference
-            android:key="qqs_num_columns"
-            android:title="@string/qqs_columns"
-            android:min="@string/qqs_columns_min"
-            android:max="@string/qqs_columns_max"
-            android:defaultValue="5"
-            settings:textStart="@string/qqs_columns_min"
-            settings:textEnd="@string/qqs_columns_max" />
-
-   <com.blaze.house.preferences.SecureSettingSeekBarPreference
-            android:key="qqs_num_columns_landscape"
-            android:title="@string/qqs_columns_landscape"
-            android:min="@string/qqs_columns_landscape_min"
-            android:max="@string/qqs_columns_landscape_max"
-            android:defaultValue="6"
-            settings:textStart="@string/qqs_columns_landscape_min"
-            settings:textEnd="@string/qqs_columns_landscape_max" />
-
-   <com.blaze.house.preferences.SecureSettingSeekBarPreference
-          android:key="qs_num_columns"
-          android:title="@string/qs_columns"
-          android:min="@string/qs_columns_min"
-          android:max="@string/qs_columns_max"
-          android:defaultValue="4"
-          settings:textStart="@string/qs_columns_min"
-          settings:textEnd="@string/qs_columns_max" />
-
-   <com.blaze.house.preferences.SecureSettingSeekBarPreference
-            android:key="qs_num_columns_landscape"
-            android:title="@string/qs_columns_landscape"
-            android:min="@string/qs_columns_landscape_min"
-            android:max="@string/qs_columns_landscape_max"
-            android:defaultValue="6"
-            settings:textStart="@string/qs_columns_landscape_min"
-            settings:textEnd="@string/qs_columns_landscape_max" />      
-   
-   <com.blaze.house.preferences.CustomSystemSeekBarPreference
-            android:key="qs_transparency"
-            android:title="@string/qs_transparency_title"
-            android:summary="@string/qs_transparency_summary"
-            android:defaultValue="100"
-            settings:interval="1"
-            settings:units="%"
-            android:max="100"
-            android:min="1" />
-
-   </PreferenceCategory>
+   <Preference
+        android:key="QS_Customisation"
+        android:title="@string/qs_customisation_title"
+        android:summary="@string/qs_customisation_summary"
+        android:fragment="com.blaze.house.fragments.QSCustomisation" />
 
 </PreferenceScreen>

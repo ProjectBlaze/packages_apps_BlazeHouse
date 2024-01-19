@@ -89,8 +89,8 @@
 
     <!-- QS style -->
     <string name="qs_style_title">QS Panel style</string>
-    <string name="qs_style_default">Large pill</string>
-    <string name="qs_style_round">Small circle</string>
+    <string name="qs_style_default">Stock</string>
+    <string name="qs_style_round">Android 11</string>
 
     <!-- QS columns customization -->
     <string name="qs_columns">QS columns in portrait</string>
@@ -116,4 +116,7 @@
     <string name="qs_transparency_title">Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
     
+    <!-- QS Customisation -->
+    <string name="qs_customisation_title">QS Customisations</string>
+    <string name="qs_customisation_summary">QS panel tweaks ahead !!!</string>
 </resources>
