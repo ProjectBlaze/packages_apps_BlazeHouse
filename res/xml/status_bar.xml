@@ -19,10 +19,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceCategory
+  
+  <PreferenceCategory
       android:title="@string/status_bar_category">
 
-      <com.blaze.house.preferences.SecureSettingListPreference
+   <com.blaze.house.preferences.SecureSettingListPreference
         android:key="status_bar_clock"
         android:title="@string/status_bar_clock_position_title"
         android:summary="%s"
@@ -31,7 +32,12 @@
         android:entryValues="@array/status_bar_clock_position_values"
         android:defaultValue="0"/>
 
-    </PreferenceCategory>
-    
+  </PreferenceCategory>
+  
+  <Preference
+        android:key="status_bar_logo"
+        android:title="@string/status_bar_logo_title"
+        android:summary="@string/status_bar_logo_summary"
+        android:fragment="com.blaze.house.fragments.StatusBarLogo" />
 
 </PreferenceScreen>
