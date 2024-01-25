@@ -47,4 +47,16 @@
             android:summary="@string/theme_customization_brightness_slider_summary"
             android:fragment="com.blaze.house.fragments.BrightnessSlider"/>
 
+    <PreferenceCategory
+            android:title="@string/monet_category">
+    
+            <!-- Monet settings -->
+            <Preference
+                android:key="monet_settings"
+                android:title="@string/monet_settings_title"
+                android:summary="@string/monet_settings_summary"
+                android:fragment="com.blaze.house.fragments.Monet" />
+    
+        </PreferenceCategory>
+
 </PreferenceScreen>
