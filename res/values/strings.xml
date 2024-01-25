@@ -37,6 +37,7 @@
 
     <!-- blazehouse categories -->
     <string name="status_bar_category">Statusbar</string>
+    <string name="icons_category">Icon Options</string>
     <string name="notifications_panel_category">QS panel</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
@@ -200,5 +201,9 @@
     <!-- Custom Navigation bar -->
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
     
 </resources>
