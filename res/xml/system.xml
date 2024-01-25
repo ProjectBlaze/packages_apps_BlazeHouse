@@ -18,6 +18,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+             android:key="data_disabled_icon"
+             android:title="@string/data_disabled_icon_title"
+             android:summary="@string/data_disabled_icon_summary"
+             android:defaultValue="true"/>
     
 
 </PreferenceScreen>
