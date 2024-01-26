@@ -65,6 +65,4 @@
             android:summary="@string/theme_customization_navbar_summary"
             android:fragment="com.blaze.house.fragments.NavbarStyles" />
 
-    </PreferenceCategory>
-
 </PreferenceScreen>

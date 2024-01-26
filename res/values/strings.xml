@@ -34,6 +34,7 @@
     <string name="icon_title">Icon</string>
     <string name="color_title">Color</string>
     <string name="colors_title">Colors</string>
+    <string name="status_bar_clock_title"></string>
 
     <!-- blazehouse categories -->
     <string name="status_bar_category">Statusbar</string>
