@@ -24,6 +24,11 @@
              android:title="@string/data_disabled_icon_title"
              android:summary="@string/data_disabled_icon_summary"
              android:defaultValue="true"/>
-    
+     
+    <com.blaze.house.preferences.SecureSettingSwitchPreference
+                 android:key="window_ignore_secure"
+                 android:title="@string/laboratory_ignore_window_secure_title"
+                 android:summary="@string/laboratory_ignore_window_secure_summary"
+                 android:defaultValue="false"/>    
 
 </PreferenceScreen>
