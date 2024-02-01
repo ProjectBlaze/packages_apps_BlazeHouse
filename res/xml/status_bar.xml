@@ -37,7 +37,13 @@
         android:summary="@string/status_bar_logo_summary"
         android:fragment="com.blaze.house.fragments.StatusBarLogo" />
 
-  <PreferenceCategory
+  <Preference
+        android:key="sbbatteryicons"
+        android:title="@string/status_bar_battery_style_title"
+        android:summary="@string/status_bar_battery_style_summary"
+        android:fragment="com.blaze.house.fragments.StatusBarBattery" />
+
+    <PreferenceCategory
         android:title="@string/icons_category">
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
