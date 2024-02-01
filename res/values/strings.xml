@@ -38,6 +38,7 @@
 
     <!-- blazehouse categories -->
     <string name="fingerprint_category">Fingerprint</string>
+    <string name="general_category">General Settings</string>
     <string name="status_bar_category">Statusbar</string>
     <string name="icons_category">Icon Options</string>
     <string name="notifications_panel_category">QS panel</string>
@@ -305,5 +306,11 @@
    <!-- Fingerprint Ripple Effect -->
    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+   <!-- Incall vibrate options -->
+   <string name="incall_vibration_category">In-call vibration options</string>
+   <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+   <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+   <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
     
 </resources>
