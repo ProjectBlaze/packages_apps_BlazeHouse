@@ -185,6 +185,15 @@
     <item>@string/status_bar_battery_style_icon_landscape</item>
     <item>@string/status_bar_battery_style_big_circle</item>
     <item>@string/status_bar_battery_style_big_dotted_circle</item>
+    <item>@string/status_bar_battery_style_icon_landscape_buddy</item>
+    <item>@string/status_bar_battery_style_icon_landscape_line</item>
+    <item>@string/status_bar_battery_style_icon_landscape_musku</item>
+    <item>@string/status_bar_battery_style_icon_landscape_pill</item>
+    <item>@string/status_bar_battery_style_icon_landscape_signal</item>
+    <item>@string/status_bar_battery_style_icon_rlandscape_style_a</item>
+    <item>@string/status_bar_battery_style_icon_landscape_style_a</item>
+    <item>@string/status_bar_battery_style_icon_rlandscape_style_b</item>
+    <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
 </string-array>
 
 <string-array name="status_bar_battery_style_values" translatable="false">
@@ -198,6 +207,15 @@
     <item>7</item>
     <item>8</item>
     <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>
+    <item>16</item>
+    <item>17</item>
+    <item>18</item>
 </string-array>
 
 <string-array name="status_bar_battery_percent_entries">
@@ -227,6 +245,15 @@
     <item>@string/status_bar_battery_style_icon_landscape</item>
     <item>@string/status_bar_battery_style_big_circle</item>
     <item>@string/status_bar_battery_style_big_dotted_circle</item>
+    <item>@string/status_bar_battery_style_icon_landscape_buddy</item>
+    <item>@string/status_bar_battery_style_icon_landscape_line</item>
+    <item>@string/status_bar_battery_style_icon_landscape_musku</item>
+    <item>@string/status_bar_battery_style_icon_landscape_pill</item>
+    <item>@string/status_bar_battery_style_icon_landscape_signal</item>
+    <item>@string/status_bar_battery_style_icon_rlandscape_style_a</item>
+    <item>@string/status_bar_battery_style_icon_landscape_style_a</item>
+    <item>@string/status_bar_battery_style_icon_rlandscape_style_b</item>
+    <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
 </string-array>
 
 <string-array name="qs_battery_style_values" translatable="false">
@@ -241,6 +268,16 @@
     <item>7</item>
     <item>8</item>
     <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>
+    <item>16</item>
+    <item>17</item>
+    <item>18</item>
+    <item>19</item>
 </string-array>
  
 </resources>
