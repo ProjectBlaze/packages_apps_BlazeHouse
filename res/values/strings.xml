@@ -37,6 +37,7 @@
     <string name="status_bar_clock_title"></string>
 
     <!-- blazehouse categories -->
+    <string name="fingerprint_category">Fingerprint</string>
     <string name="status_bar_category">Statusbar</string>
     <string name="icons_category">Icon Options</string>
     <string name="notifications_panel_category">QS panel</string>
@@ -300,5 +301,9 @@
    <!-- Lockscreen battery info indicator  -->
    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+
+   <!-- Fingerprint Ripple Effect -->
+   <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+   <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
     
 </resources>
