@@ -40,4 +40,14 @@
         android:defaultValue="100" />
 </PreferenceCategory>
 
+<PreferenceCategory
+        android:title="@string/general_category">
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+    </PreferenceCategory>
+
   </PreferenceScreen>
