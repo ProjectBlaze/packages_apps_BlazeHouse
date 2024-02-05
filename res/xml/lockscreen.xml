@@ -19,6 +19,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+  <!-- Pulse music visualizer -->
+  <Preference
+    android:key="pulse_settings"
+    android:icon="@drawable/ic_pulse"
+    android:title="@string/pulse_settings"
+    android:summary="@string/pulse_settings_summary"
+    android:fragment="com.blaze.house.fragments.PulseSettings" />
+
   <PreferenceCategory
     android:key="lockscreen_media_art_options"
     android:title="@string/lockscreen_media_art_options_title">
