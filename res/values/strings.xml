@@ -317,7 +317,7 @@
    <string name="unit_seconds">s</string>
    <string name="unit_milliseconds">ms</string>
    <string name="unit_pixels">dp</string>
-   
+
    <!-- Pulse music visualizer -->
    <string name="pulse_help_policy_notice_title">About Pulse</string>
    <string name="pulse_help_policy_notice_summary">Pulse is a brilliant audio visualizer when music plays on the device</string>
@@ -351,5 +351,13 @@
    <string name="pulse_empty_block_size">Block spacing</string>
    <string name="pulse_solid_units_rounded_title">Solid lines rounded</string>
    <string name="pulse_solid_units_rounded_summary">Round the solid lines</string>
+
+   <!-- Pulse Gravity and mirror options -->
+   <string name="pulse_custom_gravity_title">Gravity</string>
+   <string name="pulse_custom_gravity_bottom">Bottom</string>
+   <string name="pulse_custom_gravity_top">Top</string>
+   <string name="pulse_custom_gravity_center">Center</string>
+   <string name="visualizer_center_mirrored_title">Center mirrored</string>
+   <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
     
 </resources>
