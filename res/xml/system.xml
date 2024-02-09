@@ -52,4 +52,10 @@
         android:summary="@string/laboratory_ignore_window_secure_summary"
         android:defaultValue="false"/>    
 
+    <com.blaze.house.preferences.SystemSettingSwitchPreference
+        android:key="volbtn_music_controls"
+        android:title="@string/volume_button_music_control_title"
+        android:summary="@string/volume_button_music_control_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
