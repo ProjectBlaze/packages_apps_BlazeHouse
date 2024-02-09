@@ -7,49 +7,61 @@
  <PreferenceCategory
     android:title="@string/notifications_panel_category">
     
-   <com.blaze.house.preferences.SecureSettingListPreference
-        android:key="qs_show_brightness_slider"
-        android:title="@string/qs_brightness_slider_title"
-        android:entries="@array/qs_brightness_slider_entries"
-        android:entryValues="@array/qs_brightness_slider_values"
-        android:defaultValue="1" />
+	   <com.blaze.house.preferences.SecureSettingListPreference
+			android:key="qs_show_brightness_slider"
+			android:title="@string/qs_brightness_slider_title"
+			android:entries="@array/qs_brightness_slider_entries"
+			android:entryValues="@array/qs_brightness_slider_values"
+			android:defaultValue="1" />
 
-   <com.blaze.house.preferences.SecureSettingListPreference
-        android:key="qs_brightness_slider_position"
-        android:title="@string/qs_brightness_slider_position_title"
-        android:entries="@array/qs_brightness_slider_position_entries"
-        android:entryValues="@array/qs_brightness_slider_position_values"
-        android:defaultValue="0" />
+	   <com.blaze.house.preferences.SecureSettingListPreference
+			android:key="qs_brightness_slider_position"
+			android:title="@string/qs_brightness_slider_position_title"
+			android:entries="@array/qs_brightness_slider_position_entries"
+			android:entryValues="@array/qs_brightness_slider_position_values"
+			android:defaultValue="0" />
 
-   <com.blaze.house.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
-        android:title="@string/qs_auto_brightness_title"
-        android:summary="@string/qs_auto_brightness_summary"
-        android:defaultValue="true" />
+	   <com.blaze.house.preferences.SecureSettingSwitchPreference
+			android:key="qs_show_auto_brightness"
+			android:title="@string/qs_auto_brightness_title"
+			android:summary="@string/qs_auto_brightness_summary"
+			android:defaultValue="true" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="less_boring_heads_up"
-        android:title="@string/less_boring_heads_up_title"
-        android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="false" />
+	</PreferenceCategory>
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
-        android:key="notification_sound_vib_screen_on"
-        android:title="@string/notification_sound_vib_screen_on_title"
-        android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
+	<PreferenceCategory
+        android:title="@string/general_category">
 
-    <com.blaze.house.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_data_usage"
-        android:title="@string/qs_show_data_usage_title"
-        android:summary="@string/qs_show_data_usage_summary"
-        android:defaultValue="true" />
+		<com.blaze.house.preferences.SystemSettingSwitchPreference
+			android:key="less_boring_heads_up"
+			android:title="@string/less_boring_heads_up_title"
+			android:summary="@string/less_boring_heads_up_summary"
+			android:defaultValue="false" />
 
- </PreferenceCategory>
+		<com.blaze.house.preferences.SystemSettingSwitchPreference
+			android:key="notification_sound_vib_screen_on"
+			android:title="@string/notification_sound_vib_screen_on_title"
+			android:summary="@string/notification_sound_vib_screen_on_summary"
+			android:defaultValue="true" />
 
- <PreferenceCategory
-        android:key="reticker"
-        android:title="@string/reticker_category" >
+		<com.blaze.house.preferences.SecureSettingSwitchPreference
+			android:key="qs_show_data_usage"
+			android:title="@string/qs_show_data_usage_title"
+			android:summary="@string/qs_show_data_usage_summary"
+			android:defaultValue="true" />
+
+		<Preference
+			android:key="QS_Customisation"
+			android:title="@string/qs_customisation_title"
+			android:summary="@string/qs_customisation_summary"
+			android:fragment="com.blaze.house.fragments.QSCustomisation" />
+
+
+    </PreferenceCategory>
+
+	 <PreferenceCategory
+			android:key="reticker"
+			android:title="@string/reticker_category" >
 
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="reticker_status"
@@ -72,11 +84,5 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
-
-   <Preference
-        android:key="QS_Customisation"
-        android:title="@string/qs_customisation_title"
-        android:summary="@string/qs_customisation_summary"
-        android:fragment="com.blaze.house.fragments.QSCustomisation" />
 
 </PreferenceScreen>
