@@ -46,7 +46,7 @@
     <string name="lockscreen_category">Lockscreen</string>
     <string name="themes_category">Themes</string>
     <string name="monet_category">Monet Customization</string>
-    <string name="build_tweaks_summary_title">WIP!!!!!!!</string>
+    <string name="build_tweaks_summary_title">Get Amazed with Blaze !!!</string>
     <string name="listview">ListView</string>
 
     <!-- App info dialog -->
@@ -381,4 +381,8 @@
    <!-- Global Actions -->
    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
+
+   <!-- Double Tap to Sleep Lockscreen -->
+   <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
+   <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreeen to sleep</string>
 </resources>
