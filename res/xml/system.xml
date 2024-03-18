@@ -23,56 +23,61 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-         <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-         <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-         <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
         
     </PreferenceCategory>
 	
-	<PreferenceCategory
+    <PreferenceCategory
         android:title="@string/general_category">
            
-		<com.blaze.house.preferences.SystemSettingSwitchPreference
-			android:key="advanced_reboot"
-			android:title="@string/global_actions_advanced_reboot_title"
-			android:summary="@string/global_actions_advanced_reboot_summary"
-			android:defaultValue="true" />
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	    android:key="advanced_reboot"
+	    android:title="@string/global_actions_advanced_reboot_title"
+	    android:summary="@string/global_actions_advanced_reboot_summary"
+	    android:defaultValue="true" />
 
-		<com.blaze.house.preferences.SecureSettingSwitchPreference
-			android:key="window_ignore_secure"
-			android:title="@string/laboratory_ignore_window_secure_title"
-			android:summary="@string/laboratory_ignore_window_secure_summary"
-			android:defaultValue="false"/>    
+	<com.blaze.house.preferences.SecureSettingSwitchPreference
+	    android:key="window_ignore_secure"
+	    android:title="@string/laboratory_ignore_window_secure_title"
+	    android:summary="@string/laboratory_ignore_window_secure_summary"
+	    android:defaultValue="false"/>    
 
-      <com.blaze.house.preferences.SecureSettingSwitchPreference
-         android:key="volume_panel_on_left"
-         android:title="@string/volume_panel_on_left_title"
-         android:summary="@string/volume_panel_on_left_summary"
-         android:defaultValue="false" />
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="back_gesture_haptic"
+            android:title="@string/back_gesture_haptic_title"
+            android:summary="@string/back_gesture_haptic_summary"
+            android:defaultValue="false" />
 
-      <com.blaze.house.preferences.SystemSettingSwitchPreference
-			android:key="volbtn_music_controls"
-			android:title="@string/volume_button_music_control_title"
-			android:summary="@string/volume_button_music_control_summary"
-			android:defaultValue="false" />
+    </PreferenceCategory>
 
-		<com.blaze.house.preferences.SystemSettingSwitchPreference
-            	    android:key="back_gesture_haptic"
-            	    android:title="@string/back_gesture_haptic_title"
-            	    android:summary="@string/back_gesture_haptic_summary"
-            	    android:defaultValue="false" />
+    <PreferenceCategory
+        android:title="@string/volbtn_category">
 
-	</PreferenceCategory>
+	<com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="volume_panel_on_left"
+            android:title="@string/volume_panel_on_left_title"
+            android:summary="@string/volume_panel_on_left_summary"
+            android:defaultValue="false" />
+
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="volbtn_music_controls"
+            android:title="@string/volume_button_music_control_title"
+            android:summary="@string/volume_button_music_control_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

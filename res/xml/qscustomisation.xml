@@ -68,7 +68,7 @@
        android:max="100"
        android:min="1" />
 
-    <com.blaze.house.preferences.SecureSettingSwitchPreference
+   <com.blaze.house.preferences.SecureSettingSwitchPreference
        android:key="quick_settings_vibrate"
        android:title="@string/quick_settings_vibrate_title"
        android:summary="@string/quick_settings_vibrate_summary"
