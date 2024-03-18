@@ -407,4 +407,8 @@
    <!-- Status bar Icon Manager -->
    <string name="icon_manager_title">Icon manager</string>
    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
+   <!-- Haptic feedback -->
+   <string name="back_gesture_haptic_title">Haptic feedback</string>
+   <string name="back_gesture_haptic_summary">Vibrate when performing a back gesture</string>
 </resources>
