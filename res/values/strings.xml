@@ -403,4 +403,8 @@
    <string name="screen_off_animation_title">Screen off animation</string>
    <string name="screen_off_animation_crt" translatable="false">CRT</string>
    <string name="screen_off_animation_scale">Scale</string>
+
+   <!-- Status bar Icon Manager -->
+   <string name="icon_manager_title">Icon manager</string>
+   <string name="icon_manager_summary">Control visibility of status bar icons</string>
 </resources>
