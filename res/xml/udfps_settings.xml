@@ -24,4 +24,10 @@
         android:summary="@string/udfps_recog_animation_effect_summary"
         android:fragment="com.blaze.house.fragments.UdfpsAnimation" />
 
+    <Preference
+        android:key="udfps_icon_picker"
+        android:title="@string/udfps_icon_picker_title"
+        android:summary="@string/udfps_icon_picker_summary"
+        android:fragment="com.blaze.house.fragments.UdfpsIconPicker" />
+
 </PreferenceScreen>

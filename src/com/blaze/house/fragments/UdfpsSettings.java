@@ -46,8 +46,10 @@ import com.android.settings.SettingsPreferenceFragment;
 public class UdfpsSettings extends SettingsPreferenceFragment {
 
     private static final String UDFPS_ANIM_PREVIEW = "udfps_recognizing_animation_preview";
+    private static final String KEY_UDFPS_ICONS = "udfps_icon_picker";
 
     private Preference mUdfpsAnimPreview;
+    private Preference mUdfpsIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,8 +62,10 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
         final boolean udfpsResPkgInstalled = BlazeUtils.isPackageInstalled(getActivity(),
                 "com.blaze.udfps.resources");
         mUdfpsAnimPreview = findPreference(UDFPS_ANIM_PREVIEW);
+	mUdfpsIcons = (Preference) findPreference(KEY_UDFPS_ICONS);
         if (!udfpsResPkgInstalled) {
             prefSet.removePreference(mUdfpsAnimPreview);
+	    prefSet.removePreference(mUdfpsIcons);
         }
     }
 
