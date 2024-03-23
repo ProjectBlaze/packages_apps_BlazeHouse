@@ -89,6 +89,12 @@
             android:summary="@string/games_device_spoof_summary"
             android:defaultValue="false"/>
 
+	<com.blaze.house.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
