@@ -48,6 +48,7 @@
     <string name="monet_category">Monet Customization</string>
     <string name="volbtn_category">Volume Buttons/Settings</string>
     <string name="sbicons_category">Statusbar Icons</string>
+    <string name="spoof_category">Spoofing Options</string>
     <string name="build_tweaks_summary_title">Get Amazed with Blaze !!!</string>
     <string name="listview">ListView</string>
 
@@ -417,4 +418,8 @@
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
     <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
+
+    <!-- GamesPropsUtils -->
+    <string name="games_device_spoof_title">Unlock higher FPS in games</string>
+    <string name="games_device_spoof_summary">Spoof device as a high-end model in certain games, to unlock higher FPS</string>
 </resources>

@@ -80,4 +80,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/spoof_category">
+
+	<com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="games_device_spoof"
+            android:title="@string/games_device_spoof_title"
+            android:summary="@string/games_device_spoof_summary"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
