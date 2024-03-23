@@ -22,6 +22,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -37,6 +38,16 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.lockscreen);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+	final PreferenceScreen screen = getPreferenceScreen();
+
+        int[] udfpsProps = getActivity().getResources().getIntArray(
+                com.android.internal.R.array.config_udfps_sensor_props);
+        PreferenceScreen preferenceScreen = getPreferenceScreen();
+        Preference udfpsAnimationPref = findPreference("udfps_settings");
+        if (ArrayUtils.isEmpty(udfpsProps)) {
+            preferenceScreen.removePreference(udfpsAnimationPref);
+        }
     }
 
     @Override
