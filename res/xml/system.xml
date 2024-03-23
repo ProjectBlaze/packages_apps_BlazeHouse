@@ -95,6 +95,13 @@
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
 
+	<!-- Netflix Spoof -->
+        <com.blaze.house.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.netflix"
+            android:title="@string/netflix_spoof_title"
+            android:summary="@string/netflix_spoof_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
