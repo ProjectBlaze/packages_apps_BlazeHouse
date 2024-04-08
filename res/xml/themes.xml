@@ -4,6 +4,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
  
+    <PreferenceScreen
+        android:key="monet_engine"
+        android:title="@string/monet_title"
+        android:summary="@string/monet_summary"
+        android:fragment="com.blaze.house.fragments.MonetSettings" />
+
     <!-- Theming -->
     <Preference
         android:key="android.theme.customization.fonts"
