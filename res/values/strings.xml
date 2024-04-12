@@ -50,6 +50,7 @@
     <string name="general_category">General Settings</string>
     <string name="volume_category">Volume Settings</string>
     <string name="privacy_category">Privacy Indicators</string>
+    <string name="spoof_category">Spoofing Options</string>
 
     <!-- Units -->
     <string name="unit_milliseconds">milliseconds</string>
@@ -485,4 +486,8 @@
     <string name="island_notification_footer_text">
         The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
     </string>
+    
+    <!-- Unlimited google photos storage -->
+    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
+    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
 </resources>
