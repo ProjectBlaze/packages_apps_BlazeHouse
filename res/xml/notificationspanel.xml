@@ -77,6 +77,12 @@
             android:title="@string/qs_tiles_haptic_feedback_title"
             android:defaultValue="true" />
 
+	<Preference
+            android:key="island_notification"
+            android:title="@string/island_notification_title"
+            android:summary="@string/island_notification_summary"
+            android:fragment="com.blaze.house.fragments.IslandSettings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
