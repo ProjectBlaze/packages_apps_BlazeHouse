@@ -71,6 +71,12 @@
             android:title="@string/ignore_window_secure_title"
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
+
+	<com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="back_gesture_haptic"
+            android:title="@string/back_gesture_haptic_title"
+            android:summary="@string/back_gesture_haptic_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
