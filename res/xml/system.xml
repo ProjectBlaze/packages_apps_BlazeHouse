@@ -119,6 +119,13 @@
     <PreferenceCategory
         android:title="@string/spoof_category">
 
+    <!-- Google Play Integrity -->
+    <SwitchPreference
+        android:key="use_pi_spoof"
+        android:title="@string/use_pi_spoof_title"
+        android:summary="@string/use_pi_spoof_summary"
+        android:defaultValue="true" />
+
      <!-- Unlimited google photos storage -->
     <SwitchPreference
         android:key="use_photos_spoof"
